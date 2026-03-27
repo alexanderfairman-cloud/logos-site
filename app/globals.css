@@ -1,0 +1,336 @@
+/* ===================================================================
+   LOGOS — Global Design System
+   Spec: Pure white/off-white ground · Three-tone blue accent range
+   Typography: Deep navy on white · Charcoal-blue body
+   =================================================================== */
+
+/* --- Fonts --- */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap');
+
+/* Clash Display via Fontshare CDN */
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@300,400,500,600,700&display=swap');
+
+/* ===================================================================
+   DESIGN TOKENS
+   =================================================================== */
+:root {
+  /* Ground */
+  --bg-ground:        #FDFCFA;
+  --bg-surface:       #FFFFFF;
+  --bg-tinted:        #F7F8FC;
+
+  /* Glass */
+  --bg-glass:         rgba(255, 255, 255, 0.72);
+  --bg-glass-deep:    rgba(255, 255, 255, 0.55);
+  --border-hairline:  rgba(27, 58, 107, 0.08);
+  --border-glass:     rgba(74, 144, 217, 0.18);
+  --border-mid:       rgba(27, 58, 107, 0.12);
+
+  /* Blue accent range — spec-mandated */
+  --blue-electric:    #4A90D9;   /* CTAs, activation moments */
+  --blue-mid:         #7B9FD4;   /* Cornflower/periwinkle — relational */
+  --blue-deep:        #1B3A6B;   /* Sapphire — primary type, core ring */
+  --blue-pale:        #EAF1FB;   /* Tinted surface background */
+  --blue-glow:        rgba(74, 144, 217, 0.14);
+  --blue-glow-strong: rgba(74, 144, 217, 0.28);
+
+  /* Typography */
+  --text-primary:     #1B3A6B;   /* Deep navy */
+  --text-body:        #3A5080;   /* Charcoal-blue */
+  --text-muted:       rgba(27, 58, 107, 0.48);
+  --text-ghost:       rgba(27, 58, 107, 0.28);
+
+  /* Ring colours */
+  --ring-core:        #1B3A6B;   /* Deep sapphire */
+  --ring-mid:         #7B9FD4;   /* Cornflower */
+  --ring-outer:       #C8DCF5;   /* Frosted white-blue */
+  --ring-aligned:     rgba(180, 210, 255, 0.9); /* Pearlescent iridescent */
+
+  /* Spacing scale */
+  --space-xs:         0.5rem;
+  --space-sm:         1rem;
+  --space-md:         1.5rem;
+  --space-lg:         2.5rem;
+  --space-xl:         4rem;
+  --space-2xl:        6rem;
+  --space-3xl:        10rem;
+
+  /* Radius */
+  --radius-sm:        0.5rem;
+  --radius-md:        1rem;
+  --radius-lg:        1.5rem;
+  --radius-xl:        2rem;
+  --radius-full:      9999px;
+
+  /* Motion */
+  --ease-spring:      cubic-bezier(0.32, 0.72, 0, 1);
+  --ease-out-expo:    cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out-quart: cubic-bezier(0.76, 0, 0.24, 1);
+  --duration-fast:    300ms;
+  --duration-base:    600ms;
+  --duration-slow:    900ms;
+  --duration-cinematic: 1200ms;
+
+  /* Z-index layers */
+  --z-base:           0;
+  --z-raised:         10;
+  --z-overlay:        20;
+  --z-modal:          30;
+  --z-nav:            40;
+  --z-grain:          50;
+}
+
+/* ===================================================================
+   RESET
+   =================================================================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--bg-ground);
+  color: var(--text-body);
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Film-grain noise overlay — fixed, pointer-events-none, GPU-safe */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-grain);
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-size: 180px 180px;
+  opacity: 0.022;
+  mix-blend-mode: multiply;
+}
+
+img, video {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ===================================================================
+   TYPOGRAPHY
+   =================================================================== */
+.display-xl {
+  font-family: 'Clash Display', sans-serif;
+  font-size: clamp(2.25rem, 6vw, 5.25rem);
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  color: var(--text-primary);
+}
+
+.display-lg {
+  font-family: 'Clash Display', sans-serif;
+  font-size: clamp(1.75rem, 3.75vw, 3.375rem);
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+  color: var(--text-primary);
+}
+
+.display-md {
+  font-family: 'Clash Display', sans-serif;
+  font-size: clamp(1.375rem, 2.625vw, 2.25rem);
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+
+.headline {
+  font-family: 'Clash Display', sans-serif;
+  font-size: clamp(1.25rem, 2.5vw, 2rem);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+  color: var(--text-primary);
+}
+
+.body-lg {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  font-weight: 400;
+  color: var(--text-body);
+}
+
+.body-md {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text-body);
+}
+
+.body-sm {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+.eyebrow {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--blue-electric);
+}
+
+.pull-quote {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: clamp(1rem, 2vw, 1.375rem);
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.5;
+  color: var(--text-primary);
+  border-left: 2px solid var(--blue-electric);
+  padding-left: 1.25rem;
+}
+
+/* ===================================================================
+   LAYOUT UTILITIES
+   =================================================================== */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: 2rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-inline: 1.25rem;
+  }
+}
+
+.section {
+  padding-block: var(--space-3xl);
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding-block: var(--space-2xl);
+  }
+}
+
+/* ===================================================================
+   GLASS / CARD UTILITIES
+   =================================================================== */
+
+/* Double-Bezel outer shell */
+.shell {
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid var(--border-hairline);
+  border-radius: var(--radius-xl);
+  padding: 6px;
+  backdrop-filter: none; /* shell itself — no blur on scroll containers */
+}
+
+/* Double-Bezel inner core */
+.core {
+  background: var(--bg-surface);
+  border-radius: calc(var(--radius-xl) - 6px);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.9),
+              0 1px 3px rgba(27, 58, 107, 0.06);
+  overflow: hidden;
+}
+
+/* Glass panel (fixed/sticky only — backdrop-blur safe) */
+.glass-panel {
+  background: var(--bg-glass);
+  border: 1px solid var(--border-glass);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* Hexagon clip-path */
+.hexagon {
+  clip-path: polygon(50% 0%, 93.3% 25%, 93.3% 75%, 50% 100%, 6.7% 75%, 6.7% 25%);
+}
+
+/* ===================================================================
+   ANIMATION UTILITIES
+   =================================================================== */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(2rem);
+    filter: blur(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 40px var(--blue-glow); }
+  50%       { box-shadow: 0 0 80px var(--blue-glow-strong), 0 0 120px var(--blue-glow); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-8px); }
+}
+
+.animate-fade-up {
+  animation: fadeUp var(--duration-slow) var(--ease-out-expo) both;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* ===================================================================
+   SCROLLBAR
+   =================================================================== */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-ground);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-glass);
+  border-radius: var(--radius-full);
+}
+
+/* ===================================================================
+   SELECTION
+   =================================================================== */
+::selection {
+  background: var(--blue-pale);
+  color: var(--blue-deep);
+}
