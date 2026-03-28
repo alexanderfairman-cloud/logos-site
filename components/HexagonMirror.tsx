@@ -240,47 +240,48 @@ export default function HexagonMirror() {
   })
 
   // ── H1: "The World's Best Psychological Models."
-  // Fades in quickly, then exits sharply before H2 appears
-  const h1Opacity = useTransform(scrollYProgress, [0.04, 0.13, 0.17, 0.20], [0, 1, 1, 0])
-  const h1Y       = useTransform(scrollYProgress, [0.04, 0.13], [36, 0])
+  // Fades in, holds, and fades completely out into an absolute blank screen at warp speed to clear the DOM
+  const h1Opacity = useTransform(scrollYProgress, [0.0, 0.04, 0.08, 0.15], [0, 1, 1, 0])
+  const h1Y       = useTransform(scrollYProgress, [0.0, 0.04, 0.08, 0.15], [30, 0, 0, -30]) // Departs natively UPward
 
-  // ── H2: "in one integrated assessment." — only starts after H1 is fully gone
-  const h2Opacity = useTransform(scrollYProgress, [0.22, 0.27, 0.72, 0.80], [0, 1, 1, 0])
-  const h2Y       = useTransform(scrollYProgress, [0.22, 0.27], [36, 0])
+  // ── H2: "in a single assessment."
+  // Triggers smoothly and directly out of the H1 vanishing threshold (0.15) with zero lag time
+  const h2Opacity = useTransform(scrollYProgress, [0.15, 0.23, 0.70, 0.80], [0, 1, 1, 0])
+  const h2Y       = useTransform(scrollYProgress, [0.15, 0.23], [30, 0]) // Drifts natively UPward into the center
 
   // ── Central geometric hex — starts small as H2 rises, grows to full at end
-  // Phase 1: materialises at 60% opacity/40% scale as H2 enters
+  // Phase 1: materialises at 55% opacity/38% scale as H2 enters
   // Phase 2: holds subtly behind H2 (background presence)
   // Phase 3: blooms to full size after H2 exits
   const mirrorScale   = useTransform(
     scrollYProgress,
-    [0.20, 0.35, 0.68, 0.88],
+    [0.15, 0.30, 0.60, 0.80],
     [0.10, 0.38, 0.38, 1.00],
   )
   const mirrorOpacity = useTransform(
     scrollYProgress,
-    [0.20, 0.32, 0.68, 0.86],
+    [0.15, 0.28, 0.60, 0.80],
     [0,    0.55, 0.55, 1.00],
   )
 
   // ── Outer glow halo — follows the hexagon
   const glowOpacity = useTransform(
     scrollYProgress,
-    [0.20, 0.32, 0.68, 0.90],
+    [0.20, 0.32, 0.60, 0.85],
     [0, 0.40, 0.40, 0.90],
   )
   const glowScale = useTransform(
     scrollYProgress,
-    [0.20, 0.35, 0.68, 0.92],
+    [0.20, 0.35, 0.60, 0.85],
     [0.35, 0.85, 0.85, 1.40],
   )
 
   // ── Bottom hero text + CTA (final phase)
-  const eyebrowOpacity  = useTransform(scrollYProgress, [0.80, 0.90], [0, 1])
-  const headlineOpacity = useTransform(scrollYProgress, [0.82, 0.92], [0, 1])
-  const headlineY       = useTransform(scrollYProgress, [0.82, 0.92], [36, 0])
-  const ctaOpacity      = useTransform(scrollYProgress, [0.88, 0.98], [0, 1])
-  const ctaY            = useTransform(scrollYProgress, [0.88, 0.98], [24, 0])
+  const eyebrowOpacity  = useTransform(scrollYProgress, [0.72, 0.82], [0, 1])
+  const headlineOpacity = useTransform(scrollYProgress, [0.75, 0.85], [0, 1])
+  const headlineY       = useTransform(scrollYProgress, [0.75, 0.85], [36, 0])
+  const ctaOpacity      = useTransform(scrollYProgress, [0.80, 0.90], [0, 1])
+  const ctaY            = useTransform(scrollYProgress, [0.80, 0.90], [24, 0])
 
   // ── Scroll indicator
   const indicatorOpacity = useTransform(scrollYProgress, [0, 0.08], [1, 0])
@@ -390,7 +391,7 @@ export default function HexagonMirror() {
             letterSpacing: '-0.025em',
             color:         'var(--blue-deep)',
           }}>
-            in one integrated assessment.
+            in a single assessment.
           </p>
         </motion.div>
 

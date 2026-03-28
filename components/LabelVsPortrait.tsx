@@ -105,7 +105,7 @@ export default function LabelVsPortrait() {
             <p className="eyebrow">70+ traits measured</p>
 
             <h2 className="display-md">
-              Other tests give you a label. Logos gives you a landscape.
+              Logos is designed for depth.
             </h2>
 
             <p className="body-lg">

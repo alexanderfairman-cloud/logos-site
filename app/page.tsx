@@ -1,5 +1,6 @@
 import NavPill from '@/components/NavPill'
 import HexagonMirror from '@/components/HexagonMirror'
+import FogToClarity from '@/components/FogToClarity'
 import LabelVsPortrait from '@/components/LabelVsPortrait'
 import BeingSeen from '@/components/BeingSeen'
 import ThreeRings from '@/components/ThreeRings'
@@ -16,11 +17,11 @@ export default function HomePage() {
         {/* Scene 1 — Hexagon Mirror hero (300vh sticky scroll) */}
         <HexagonMirror />
 
-        {/* Scene 1B — Label vs Portrait */}
+        {/* Scene 1.5 — Original Bar Chart Visualizer */}
         <LabelVsPortrait />
 
-        {/* Scene 2 — Being Seen */}
-        <BeingSeen />
+        {/* Scene 1B — Fog to Clarity (500vh sticky scroll) */}
+        <FogToClarity />
 
         {/* Scene 3 — The Three Rings */}
         <ThreeRings />

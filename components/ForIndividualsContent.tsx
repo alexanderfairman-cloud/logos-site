@@ -10,7 +10,7 @@ const contentSections = [
   {
     ring: 'Ring 1 — The Core',
     ringColor: 'var(--blue-deep)',
-    headline: 'Finally know what genuinely fulfills you.',
+    headline: 'Discover Your Best Path Forward.',
     sectionTag: 'Clarify Purpose in Striking Clarity',
     body: 'Logos identifies your core archetypes — the specific experiences and environments that generate your deepest motivation and joy. When your work and relationships express these archetypes, you feel unstoppable. When they don\'t, no external success quite fills the gap.',
   },

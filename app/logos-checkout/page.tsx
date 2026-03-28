@@ -334,7 +334,7 @@ export default function IndividualCheckoutPage() {
                     </div>
 
                     <CTAButton
-                      href="https://buy.stripe.com/logos-checkout"
+                      href="https://buy.stripe.com/eVq00j48D9ofgf25ssfIs1c"
                       size="lg"
                       id="individual-checkout-cta"
                     >

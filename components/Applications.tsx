@@ -6,10 +6,10 @@ import CTAButton from './CTAButton'
 const audiences = [
   {
     label: 'For the Individual',
-    headline: 'Finally know what genuinely fulfills you.',
+    headline: 'Discover Your Best Path Forward.',
     body: 'After you complete your Logos assessment, Logos will coach you toward your goals using a precise growth roadmap. It guides you to make specific, clear changes to the way you live so you can reach your full potential.',
     proof: 'In 90 days, most Logos clients report a measurable shift in direction, decision-making, and self-understanding.',
-    href: '/for-leaders',
+    href: '/logos-checkout',
     cta: 'Start Your Journey',
     accent: 'var(--blue-deep)',
     bg: 'var(--blue-pale)',
