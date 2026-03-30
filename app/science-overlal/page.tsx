@@ -204,10 +204,177 @@ export default function ScienceOverallPage() {
     <>
       <NavPill />
       <main>
-        {/* ── Hero ──────────────────────────────────────────────────────── */}
+
+        {/* ── Science Framework Intro ────────────────────────────────── */}
         <section
           style={{
             paddingTop: 'calc(5rem + 80px)',
+            paddingBottom: 'var(--space-2xl)',
+            background: 'var(--bg-ground)',
+            position: 'relative',
+            overflow: 'hidden',
+          }}
+        >
+          {/* Ambient glow */}
+          <div style={{
+            position: 'absolute', top: '-20%', left: '50%',
+            transform: 'translateX(-50%)',
+            width: '900px', height: '400px',
+            borderRadius: '9999px',
+            background: 'radial-gradient(ellipse, rgba(74,144,217,0.08) 0%, transparent 70%)',
+            pointerEvents: 'none',
+          }} />
+
+          <div className="container" style={{ maxWidth: 860 }}>
+            <motion.div
+              initial={{ opacity: 0, y: 32 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+              style={{ display: 'flex', flexDirection: 'column', gap: '1.75rem', alignItems: 'flex-start' }}
+            >
+              <p className="eyebrow">The Logos Science Framework</p>
+              <h1 className="display-xl" style={{ maxWidth: 700 }}>
+                Leadership insight built on established science.
+              </h1>
+              <p className="body-lg" style={{ maxWidth: 660, color: 'var(--text-muted)', lineHeight: 1.75 }}>
+                Logos synthesizes decades of peer-reviewed research across the Big Five, Enneagram,
+                Attachment Theory, the Dark Triad, and Transformational Leadership science to give you
+                unparalleled clarity into your leadership abilities. Every score surfaces your core
+                strengths and provides a precise, evidence-backed pathway for your development.
+              </p>
+            </motion.div>
+
+            {/* ── 7 Science Page Links ── */}
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.9, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+              style={{ marginTop: '3rem' }}
+            >
+              <p style={{
+                fontFamily: "'Plus Jakarta Sans', sans-serif",
+                fontSize: '0.6875rem',
+                fontWeight: 600,
+                letterSpacing: '0.14em',
+                textTransform: 'uppercase' as const,
+                color: 'var(--text-ghost)',
+                marginBottom: '1.25rem',
+              }}>Eight leadership scores — explore each</p>
+              <div
+                style={{
+                  display: 'grid',
+                  gridTemplateColumns: 'repeat(3, 1fr)',
+                  gap: '1rem',
+                }}
+                className="science-links-grid"
+              >
+                {[
+                  {
+                    href: '/leadership-science-effective',
+                    title: 'Leadership Effectiveness',
+                    desc: 'Measures your ability to generate positive organizational outcomes, weighted toward transformational leadership.',
+                  },
+                  {
+                    href: '/leadership-science-perceived',
+                    title: 'Perceived Leadership',
+                    desc: 'Reveals how subordinates, colleagues, and stakeholders will perceive and rate your leadership.',
+                  },
+                  {
+                    href: '/durability',
+                    title: 'Leadership Durability',
+                    desc: 'Assesses your psychological fortitude and ability to sustain performance under high-pressure conditions.',
+                  },
+                  {
+                    href: '/leadership-science-ethics',
+                    title: 'Leadership Ethics',
+                    desc: 'Evaluates your ethical integrity and your likelihood of fomenting conflict within your organization.',
+                  },
+                  {
+                    href: '/employee-perf',
+                    title: 'Impact on Employee Performance',
+                    desc: 'Indicates how your leadership traits and behaviors will drive your team\'s motivation and output.',
+                  },
+                  {
+                    href: '/leadership-science-engagement',
+                    title: 'Employee Engagement & Retention',
+                    desc: 'Predicts how your leadership style will impact your team\'s engagement, commitment, and tenure.',
+                  },
+                  {
+                    href: '/leadership-science-innovation',
+                    title: 'Innovation Score',
+                    desc: 'Reflects how your personality positions you to drive creative problem-solving at your organization.',
+                  },
+                ].map((page, i) => (
+                  <motion.a
+                    key={page.href}
+                    href={page.href}
+                    initial={{ opacity: 0, y: 16 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: 0.3 + i * 0.06, ease: [0.16, 1, 0.3, 1] }}
+                    style={{
+                      display: 'flex',
+                      flexDirection: 'column',
+                      gap: '0.625rem',
+                      background: 'rgba(255,255,255,0.72)',
+                      backdropFilter: 'blur(12px)',
+                      WebkitBackdropFilter: 'blur(12px)',
+                      border: '1px solid var(--border-hairline)',
+                      borderRadius: 'var(--radius-xl)',
+                      padding: '1.25rem 1.375rem',
+                      textDecoration: 'none',
+                      cursor: 'pointer',
+                      transition: 'all 0.22s ease',
+                      boxShadow: '0 2px 12px rgba(27,58,107,0.05)',
+                      position: 'relative',
+                      overflow: 'hidden',
+                    }}
+                    onMouseEnter={e => {
+                      (e.currentTarget as HTMLElement).style.transform = 'translateY(-2px)'
+                      ;(e.currentTarget as HTMLElement).style.boxShadow = '0 8px 28px rgba(27,58,107,0.12)'
+                      ;(e.currentTarget as HTMLElement).style.borderColor = 'rgba(74,144,217,0.3)'
+                    }}
+                    onMouseLeave={e => {
+                      (e.currentTarget as HTMLElement).style.transform = 'translateY(0)'
+                      ;(e.currentTarget as HTMLElement).style.boxShadow = '0 2px 12px rgba(27,58,107,0.05)'
+                      ;(e.currentTarget as HTMLElement).style.borderColor = 'var(--border-hairline)'
+                    }}
+                  >
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '0.5rem' }}>
+                      <p style={{
+                        fontFamily: "'Clash Display', sans-serif",
+                        fontSize: '0.9375rem',
+                        fontWeight: 600,
+                        color: 'var(--blue-deep)',
+                        letterSpacing: '-0.01em',
+                        lineHeight: 1.25,
+                      }}>{page.title}</p>
+                      <span style={{
+                        fontSize: '1rem',
+                        color: 'var(--blue-electric)',
+                        flexShrink: 0,
+                        marginTop: '1px',
+                        opacity: 0.7,
+                      }}>→</span>
+                    </div>
+                    <p style={{
+                      fontFamily: "'Plus Jakarta Sans', sans-serif",
+                      fontSize: '0.8125rem',
+                      color: 'var(--text-muted)',
+                      lineHeight: 1.6,
+                      margin: 0,
+                    }}>{page.desc}</p>
+                  </motion.a>
+                ))}
+              </div>
+            </motion.div>
+          </div>
+        </section>
+
+        {/* ── Hero ──────────────────────────────────────────────────────── */}
+
+        <section
+          style={{
+            paddingTop: 'var(--space-3xl)',
             paddingBottom: 'var(--space-3xl)',
             background: 'var(--bg-ground)',
             overflow: 'hidden',
@@ -645,9 +812,11 @@ export default function ScienceOverallPage() {
           .traits-grid { grid-template-columns: 1fr !important; }
           .steps-grid { grid-template-columns: 1fr 1fr !important; }
           .testimonials-grid { grid-template-columns: 1fr !important; }
+          .science-links-grid { grid-template-columns: 1fr 1fr !important; }
         }
         @media (max-width: 480px) {
           .steps-grid { grid-template-columns: 1fr !important; }
+          .science-links-grid { grid-template-columns: 1fr !important; }
         }
       `}</style>
       <Footer />

@@ -30,6 +30,7 @@ function TraitBar({
     <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', flex: 1, minWidth: 0 }}>
       {/* Track */}
       <div
+        className="trait-bar-track"
         style={{
           flex: 1,
           height: isLogos ? 10 : 7,
@@ -41,6 +42,7 @@ function TraitBar({
       >
         {/* Fill */}
         <motion.div
+          className="trait-bar-fill"
           initial={{ width: '0%' }}
           whileInView={{ width: `${pct}%` }}
           viewport={{ once: true, margin: '-60px' }}
@@ -52,10 +54,11 @@ function TraitBar({
           style={{
             position: 'absolute',
             inset: 0,
+            minWidth: isLogos ? undefined : '5px',
             borderRadius: 9999,
             background: isLogos
               ? 'linear-gradient(90deg, var(--blue-mid) 0%, var(--blue-electric) 100%)'
-              : 'rgba(27, 58, 107, 0.22)',
+              : 'rgba(27, 58, 107, 0.45)',
             boxShadow: isLogos ? '0 0 12px rgba(74,144,217,0.35)' : 'none',
           }}
         />
@@ -225,6 +228,10 @@ export default function LabelVsPortrait() {
             width: auto !important;
             min-width: unset !important;
             flex-shrink: unset !important;
+          }
+          /* Make bar tracks taller on mobile for better visibility */
+          .trait-bar-track {
+            height: 9px !important;
           }
         }
       `}</style>

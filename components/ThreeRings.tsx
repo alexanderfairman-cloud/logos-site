@@ -78,6 +78,7 @@ export default function ThreeRings() {
                   whileInView={{ opacity: 1, scale: 1, filter: 'blur(0px)' }}
                   viewport={{ once: true, margin: '-100px' }}
                   transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+                  className="ring-image-col"
                   style={{
                     position: 'relative',
                     aspectRatio: '1 / 1',
@@ -85,8 +86,6 @@ export default function ThreeRings() {
                     maxWidth: '500px',
                     margin: '0 auto',
                     borderRadius: '24px',
-                    // AnimatedCompass uses absolute positioned children (labels + card)
-                    // that must overflow the container — so no overflow:hidden here
                     overflow: i === 0 ? 'visible' : 'hidden',
                     direction: 'ltr',
                   }}
@@ -113,6 +112,7 @@ export default function ThreeRings() {
                     delay: 0.2,
                     ease: [0.16, 1, 0.3, 1],
                   }}
+                  className="ring-text-col"
                   style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem', direction: 'ltr' }}
                 >
                   {/* Ring colour mark */}
@@ -155,14 +155,19 @@ export default function ThreeRings() {
           .ring-row {
             grid-template-columns: 1fr !important;
             direction: ltr !important;
-            gap: 2.5rem !important;
+            gap: 1.5rem !important;
           }
           .rings-stack {
-            gap: 4rem !important;
+            gap: 2.5rem !important;
           }
-          /* Constrain image to avoid dominating the full viewport */
-          .ring-row > div:first-child {
-            max-width: 260px !important;
+          /* All images sit above their text (natural DOM order) */
+          /* Layer 1 compass needs more room for the sage card */
+          .rings-stack > div:first-child .ring-image-col {
+            max-width: 280px !important;
+          }
+          /* Layers 2 & 3 — smaller static images */
+          .rings-stack > div:not(:first-child) .ring-image-col {
+            max-width: 200px !important;
           }
         }
       `}</style>

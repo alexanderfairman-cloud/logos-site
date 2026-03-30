@@ -30,12 +30,12 @@ export default function FogToClarity() {
   }, [scrollYProgress])
 
   // ── HEADLINE 1: "where you are today" — active from 0.05 → 0.45 ──
-  const h1Opacity  = useTransform(scrollYProgress, [0.05, 0.18, 0.40, 0.52], [0, 1, 1, 0])
-  const h1Blur     = useTransform(scrollYProgress, [0.05, 0.18, 0.40, 0.52], ['blur(12px)', 'blur(0px)', 'blur(0px)', 'blur(8px)'])
+  const h1Opacity  = useTransform(scrollYProgress, [0.05, 0.18, 0.44, 0.56], [0, 1, 1, 0])
+  const h1Blur     = useTransform(scrollYProgress, [0.05, 0.18, 0.44, 0.56], ['blur(12px)', 'blur(0px)', 'blur(0px)', 'blur(8px)'])
   const h1Scale    = useTransform(scrollYProgress, [0.05, 0.18], [0.88, 1])
 
   // ── BG 1: Hiker at base — fades in, then fades out ──
-  const bg1Opacity = useTransform(scrollYProgress, [0.0, 0.12, 0.40, 0.52], [0, 0.5, 0.5, 0])
+  const bg1Opacity = useTransform(scrollYProgress, [0.0, 0.12, 0.44, 0.56], [0, 0.5, 0.5, 0])
 
   // ── HEADLINE 2: "To where you want to go tomorrow" — active from 0.62 → end ──
   const h2Opacity  = useTransform(scrollYProgress, [0.60, 0.75], [0, 1])
@@ -46,7 +46,7 @@ export default function FogToClarity() {
   const bg2Opacity = useTransform(scrollYProgress, [0.55, 0.70], [0, 0.5])
 
   // ── EYEBROW: fades in with headline 1 ──
-  const eyebrowOpacity = useTransform(scrollYProgress, [0.05, 0.20, 0.40, 0.52], [0, 1, 1, 0])
+  const eyebrowOpacity = useTransform(scrollYProgress, [0.05, 0.20, 0.44, 0.56], [0, 1, 1, 0])
 
   return (
     <section
