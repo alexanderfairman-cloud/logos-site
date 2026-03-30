@@ -88,6 +88,7 @@ export default function ThreeRings() {
                     borderRadius: '24px',
                     overflow: i === 0 ? 'visible' : 'hidden',
                     direction: 'ltr',
+                    background: i === 0 ? 'transparent' : 'white',
                   }}
                 >
                   {i === 0 ? (

@@ -65,6 +65,7 @@ function TraitBar({
       </div>
       {/* Label */}
       <span
+        className="trait-bar-label"
         style={{
           fontFamily: "'Plus Jakarta Sans', sans-serif",
           fontSize: isLogos ? '0.9375rem' : '0.8125rem',
@@ -232,6 +233,12 @@ export default function LabelVsPortrait() {
           /* Make bar tracks taller on mobile for better visibility */
           .trait-bar-track {
             height: 9px !important;
+          }
+          /* Remove fixed label width so the bar track gets maximum space */
+          .trait-bar-label {
+            min-width: unset !important;
+            font-size: 0.6875rem !important;
+            flex-shrink: 0;
           }
         }
       `}</style>

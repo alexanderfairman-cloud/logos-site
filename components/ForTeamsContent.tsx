@@ -194,20 +194,20 @@ export default function ForTeamsContent() {
               >
                 {/* Number + tag — left on even, right on odd */}
                 {i % 2 === 0 && (
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', paddingTop: '0.25rem' }}>
+                  <div className="teams-num-col" style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', paddingTop: '0.25rem' }}>
                     <NumTag number={i + 1} tag={s.tag} />
                   </div>
                 )}
 
                 {/* Copy */}
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                <div className="teams-copy-col" style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                   <h2 className="display-md">{s.headline}</h2>
                   <p className="body-lg">{s.body}</p>
                 </div>
 
                 {/* Number + tag — right on odd */}
                 {i % 2 !== 0 && (
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', paddingTop: '0.25rem', alignItems: 'flex-end' }}>
+                  <div className="teams-num-col" style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', paddingTop: '0.25rem', alignItems: 'flex-end' }}>
                     <NumTag number={i + 1} tag={s.tag} />
                   </div>
                 )}
@@ -290,6 +290,12 @@ export default function ForTeamsContent() {
         @media (max-width: 768px) {
           .teams-hero-grid { grid-template-columns: 1fr !important; gap: 2.5rem !important; }
           .teams-section-row { grid-template-columns: 1fr !important; gap: 1.5rem !important; }
+          /* Always show num label above copy, regardless of DOM order */
+          .teams-num-col {
+            order: -1 !important;
+            align-items: flex-start !important;
+          }
+          .teams-copy-col { order: 0 !important; }
         }
       `}</style>
     </>
