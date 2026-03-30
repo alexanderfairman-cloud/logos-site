@@ -330,6 +330,7 @@ export default function AnimatedCompass() {
           textAlign: 'left',
           pointerEvents: isLocked ? 'auto' : 'none',
         }}
+        className="sage-card"
       >
         <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
           <motion.div
@@ -370,6 +371,17 @@ export default function AnimatedCompass() {
         </p>
       </motion.div>
 
+      <style>{`
+        @media (max-width: 640px) {
+          .sage-card {
+            left: 4% !important;
+            transform: none !important;
+            width: 92% !important;
+            max-width: none !important;
+          }
+        }
+      `}</style>
     </div>
   )
 }
+

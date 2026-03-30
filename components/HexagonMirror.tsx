@@ -337,7 +337,7 @@ export default function HexagonMirror() {
         }} />
 
         {/* ── Logos logo image (seed → full bloom) ──────────────────── */}
-        <motion.div style={{
+        <motion.div className="mirror-icon" style={{
           position: 'absolute', top: '50%', left: '50%',
           translateX: '-50%', translateY: '-50%',
           width:  'clamp(140px, 22vw, 300px)',
@@ -400,7 +400,7 @@ export default function HexagonMirror() {
         </motion.div>
 
         {/* ── Bottom hero text + CTA (final phase) ───────────────────── */}
-        <motion.div style={{
+        <motion.div className="hero-bottom-cta" style={{
           position: 'absolute',
           bottom: 'clamp(3rem, 8vh, 5.5rem)',
           left: '50%', translateX: '-50%',
@@ -437,6 +437,27 @@ export default function HexagonMirror() {
           <motion.div style={{ opacity: ctaOpacity }}>
             <TrustLine centered />
           </motion.div>
+
+          {/* ── Mobile-only: static framework label strip ── */}
+          <motion.div
+            className="mobile-framework-strip"
+            style={{ opacity: ctaOpacity, display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '0.375rem', marginTop: '0.25rem' }}
+          >
+            {['Big Five', 'Enneagram', 'Jung', 'Attachment', 'Locus of Control', 'Dark Triad'].map((name) => (
+              <span key={name} style={{
+                fontFamily: "'Plus Jakarta Sans', sans-serif",
+                fontSize: '0.5625rem',
+                fontWeight: 600,
+                letterSpacing: '0.12em',
+                textTransform: 'uppercase',
+                color: 'var(--text-muted)',
+                background: 'rgba(27,58,107,0.05)',
+                border: '1px solid rgba(27,58,107,0.10)',
+                borderRadius: '9999px',
+                padding: '0.2rem 0.6rem',
+              }}>{name}</span>
+            ))}
+          </motion.div>
         </motion.div>
 
         {/* ── Scroll indicator ────────────────────────────────────────── */}
@@ -467,9 +488,12 @@ export default function HexagonMirror() {
         </motion.div>
       </div>
       <style>{`
+        /* ── Mobile tweaks ── */
+        .mobile-framework-strip { display: none; }
+
         @media (max-width: 640px) {
           .hero-headline {
-            top: 57% !important;
+            top: 50% !important;
           }
           .hexmirror-root {
             height: 220vh !important;
@@ -477,13 +501,24 @@ export default function HexagonMirror() {
           .framework-label-item {
             display: none !important;
           }
+          /* Hide the large central icon on mobile — it covers CTAs */
+          .mirror-icon {
+            display: none !important;
+          }
           .hero-bottom-cta {
-            bottom: 2rem !important;
+            bottom: 1.5rem !important;
             padding-inline: 1.25rem !important;
+          }
+          /* Show the static framework pill strip only on mobile */
+          .mobile-framework-strip {
+            display: flex !important;
           }
         }
         @media (max-width: 768px) {
           .framework-label-item {
+            display: none !important;
+          }
+          .mirror-icon {
             display: none !important;
           }
         }

@@ -160,6 +160,10 @@ export default function ThreeRings() {
           .rings-stack {
             gap: 4rem !important;
           }
+          /* Constrain image to avoid dominating the full viewport */
+          .ring-row > div:first-child {
+            max-width: 260px !important;
+          }
         }
       `}</style>
     </section>
