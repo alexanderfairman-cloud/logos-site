@@ -498,8 +498,10 @@ export default function HexagonMirror() {
           .hexmirror-root {
             height: 220vh !important;
           }
+          /* Scale framework labels down on mobile instead of hiding */
           .framework-label-item {
-            display: none !important;
+            font-size: 9px !important;
+            letter-spacing: 0.08em !important;
           }
           /* Hide the large central icon on mobile — it covers CTAs */
           .mirror-icon {
@@ -516,7 +518,8 @@ export default function HexagonMirror() {
         }
         @media (max-width: 768px) {
           .framework-label-item {
-            display: none !important;
+            font-size: 10px !important;
+            letter-spacing: 0.08em !important;
           }
           .mirror-icon {
             display: none !important;
