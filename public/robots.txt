@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+
+# Block obfuscated checkout/flow pages from search index
+Disallow: /logos-beginvxfjdasj
+Disallow: /logos-checkoutqjt4p1sc
+Disallow: /logos-auto-report-checkoutz2hb1fcn
+Disallow: /logos-individuals-beginti1cj4e4
+Disallow: /logos-report-confirmationa2u8jwdt
+Disallow: /logos-coaches-confirmation
+Disallow: /wealth-confirmation
+Disallow: /session
+Disallow: /report
+Disallow: /logos-wealthreport
+
+Sitemap: https://experiencelogos.com/sitemap.xml
