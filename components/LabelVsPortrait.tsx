@@ -163,6 +163,7 @@ export default function LabelVsPortrait() {
                       delay: 0.2 + i * 0.07,
                       ease: [0.16, 1, 0.3, 1],
                     }}
+                    className="trait-row"
                     style={{
                       display: 'flex',
                       alignItems: 'center',
@@ -177,6 +178,7 @@ export default function LabelVsPortrait() {
                   >
                     {/* Name */}
                     <span
+                      className="assessment-name"
                       style={{
                         fontFamily: "'Plus Jakarta Sans', sans-serif",
                         fontSize: row.isLogos ? '1rem' : '0.9375rem',
@@ -212,6 +214,17 @@ export default function LabelVsPortrait() {
           .label-grid {
             grid-template-columns: 1fr !important;
             gap: 3rem !important;
+          }
+          /* Stack name above bar on mobile for maximum bar width */
+          .trait-row {
+            flex-direction: column !important;
+            align-items: stretch !important;
+            gap: 0.375rem !important;
+          }
+          .assessment-name {
+            width: auto !important;
+            min-width: unset !important;
+            flex-shrink: unset !important;
           }
         }
       `}</style>

@@ -244,13 +244,13 @@ export default function HexagonMirror() {
 
   // ── H1: "The World's Best Psychological Models."
   // Fades in, holds, and fades completely out into an absolute blank screen at warp speed to clear the DOM
-  const h1Opacity = useTransform(scrollYProgress, [0.0, 0.04, 0.08, 0.15], [0, 1, 1, 0])
-  const h1Y       = useTransform(scrollYProgress, [0.0, 0.04, 0.08, 0.15], [30, 0, 0, -30]) // Departs natively UPward
+  const h1Opacity = useTransform(scrollYProgress, [0.0, 0.04, 0.07, 0.12], [0, 1, 1, 0])
+  const h1Y       = useTransform(scrollYProgress, [0.0, 0.04, 0.07, 0.12], [30, 0, 0, -30]) // Departs natively UPward
 
   // ── H2: "in a single assessment."
   // Triggers smoothly and directly out of the H1 vanishing threshold (0.15) with zero lag time
-  const h2Opacity = useTransform(scrollYProgress, [0.15, 0.23, 0.70, 0.80], [0, 1, 1, 0])
-  const h2Y       = useTransform(scrollYProgress, [0.15, 0.23], [30, 0]) // Drifts natively UPward into the center
+  const h2Opacity = useTransform(scrollYProgress, [0.12, 0.19, 0.70, 0.80], [0, 1, 1, 0])
+  const h2Y       = useTransform(scrollYProgress, [0.12, 0.19], [30, 0]) // Drifts natively UPward into the center
 
   // ── Central geometric hex — starts small as H2 rises, grows to full at end
   // Phase 1: materialises at 55% opacity/38% scale as H2 enters
@@ -373,7 +373,7 @@ export default function HexagonMirror() {
             letterSpacing: '-0.03em',
             color:         'var(--blue-deep)',
           }}>
-            The World&rsquo;s Best<br />Psychological Models.
+            The World&rsquo;s Best<br />Psychological<br className="mobile-only-break" /> Models.
           </p>
         </motion.div>
 
@@ -490,8 +490,10 @@ export default function HexagonMirror() {
       <style>{`
         /* ── Mobile tweaks ── */
         .mobile-framework-strip { display: none; }
+        .mobile-only-break { display: none; }
 
         @media (max-width: 640px) {
+          .mobile-only-break { display: inline !important; }
           .hero-headline {
             top: 50% !important;
           }
