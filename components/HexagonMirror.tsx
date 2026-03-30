@@ -496,7 +496,7 @@ export default function HexagonMirror() {
             top: 50% !important;
           }
           .hexmirror-root {
-            height: 220vh !important;
+            height: 300vh !important;
           }
           /* Scale framework labels down on mobile instead of hiding */
           .framework-label-item {
