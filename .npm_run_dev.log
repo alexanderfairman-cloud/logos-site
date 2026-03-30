@@ -74,3 +74,1845 @@ https://react.dev/link/hydration-mismatch
  GET /for-leaders 200 in 56ms (next.js: 28ms, application-code: 28ms)
 [browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_115brz8._.js:2431:13)
  GET /for-coaches 200 in 34ms (next.js: 22ms, application-code: 12ms)
+ GET / 200 in 473ms (next.js: 192ms, application-code: 281ms)
+ GET /env 404 in 80ms (next.js: 12ms, application-code: 68ms)
+ GET / 200 in 107ms (next.js: 38ms, application-code: 69ms)
+ GET / 200 in 205ms (next.js: 81ms, application-code: 123ms)
+ GET / 200 in 82ms (next.js: 36ms, application-code: 46ms)
+ GET / 200 in 46ms (next.js: 3ms, application-code: 43ms)
+ GET / 200 in 28ms (next.js: 1761µs, application-code: 26ms)
+ GET / 200 in 16ms (next.js: 1431µs, application-code: 15ms)
+ GET / 200 in 228ms (next.js: 44ms, application-code: 184ms)
+ GET /env 404 in 111ms (next.js: 56ms, application-code: 55ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <head>
+                          <body
+-                           className="clickup-chrome-ext_installed"
+                          >
+                            ...
+                              <HomePage>
+                                <NavPill>
+                                <main>
+                                  <HexagonMirror>
+                                  <FogToClarity>
+                                  <LabelVsPortrait>
+                                    <section
++                                     className="section"
+-                                     className="section containerWrapper"
+                                      style={{background:"var(--bg-s...",overflow:"hidden"}}
+                                    >
+                                  ...
+                                ...
+                  ...
+ 
+    at <unknown> (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+    at runWithFiberInDEV (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at emitPendingHydrationWarnings (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3438:13)
+    at completeWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6885:102)
+    at runWithFiberInDEV (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:131)
+    at completeUnitOfWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9622:23)
+    at performUnitOfWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9557:28)
+    at workLoopConcurrentByScheduler (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9551:58)
+    at renderRootConcurrent (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9534:71)
+    at performWorkOnRoot (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64) (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+[browser] Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly. (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_115brz8._.js:2431:13)
+✓ Compiled in 47ms
+ GET / 200 in 70ms (next.js: 11ms, application-code: 59ms)
+ GET /env 404 in 35ms (next.js: 5ms, application-code: 30ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <head>
+                          <body
+-                           className="clickup-chrome-ext_installed"
+                          >
+                            ...
+                              <HomePage>
+                                <NavPill>
+                                <main>
+                                  <HexagonMirror>
+                                  <FogToClarity>
+                                  <LabelVsPortrait>
+                                    <section
++                                     className="section"
+-                                     className="section containerWrapper"
+                                      style={{background:"var(--bg-s...",overflow:"hidden"}}
+                                    >
+                                  ...
+                                ...
+                  ...
+ 
+    at <unknown> (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+    at runWithFiberInDEV (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at emitPendingHydrationWarnings (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3438:13)
+    at completeWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6885:102)
+    at runWithFiberInDEV (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:131)
+    at completeUnitOfWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9622:23)
+    at performUnitOfWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9557:28)
+    at workLoopConcurrentByScheduler (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9551:58)
+    at renderRootConcurrent (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9534:71)
+    at performWorkOnRoot (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64) (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+[browser] Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly. (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_115brz8._.js:2431:13)
+✓ Compiled in 37ms
+✓ Compiled in 48ms
+✓ Compiled in 5ms
+✓ Compiled in 28ms
+ GET / 200 in 82ms (next.js: 18ms, application-code: 64ms)
+ GET /env 404 in 33ms (next.js: 6ms, application-code: 27ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <head>
+                          <body
+-                           className="clickup-chrome-ext_installed"
+                          >
+                            ...
+                              <HomePage>
+                                <NavPill>
+                                <main>
+                                  <HexagonMirror>
+                                  <FogToClarity>
+                                  <LabelVsPortrait>
+                                    <section
++                                     className="section"
+-                                     className="section containerWrapper"
+                                      style={{background:"var(--bg-s...",overflow:"hidden"}}
+                                    >
+                                  ...
+                                ...
+                  ...
+ 
+    at <unknown> (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+    at runWithFiberInDEV (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at emitPendingHydrationWarnings (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3438:13)
+    at completeWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6885:102)
+    at runWithFiberInDEV (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:131)
+    at completeUnitOfWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9622:23)
+    at performUnitOfWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9557:28)
+    at workLoopConcurrentByScheduler (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9551:58)
+    at renderRootConcurrent (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9534:71)
+    at performWorkOnRoot (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64) (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+[browser] Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly. (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_115brz8._.js:2431:13)
+ GET / 200 in 332ms (next.js: 183ms, application-code: 150ms)
+ GET / 200 in 105ms (next.js: 6ms, application-code: 99ms)
+ GET / 200 in 68ms (next.js: 6ms, application-code: 62ms)
+ GET / 200 in 116ms (next.js: 3ms, application-code: 113ms)
+ GET / 200 in 124ms (next.js: 6ms, application-code: 118ms)
+ GET / 200 in 123ms (next.js: 4ms, application-code: 119ms)
+ GET / 200 in 110ms (next.js: 3ms, application-code: 107ms)
+ GET / 200 in 107ms (next.js: 4ms, application-code: 103ms)
+ GET / 200 in 62ms (next.js: 18ms, application-code: 44ms)
+ GET / 200 in 23ms (next.js: 2ms, application-code: 20ms)
+ GET / 200 in 212ms (next.js: 8ms, application-code: 204ms)
+ GET /env 404 in 40ms (next.js: 19ms, application-code: 21ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <head>
+                          <body
+-                           className="clickup-chrome-ext_installed"
+                          >
+                            ...
+                              <HomePage>
+                                <NavPill>
+                                <main>
+                                  <HexagonMirror>
+                                  <FogToClarity>
+                                  <DesignedForDepth>
+                                  <BeingSeen>
+                                    <section
++                                     className="section"
+-                                     className="section containerWrapper"
+                                      style={{background:"var(--bg-t...",overflow:"hidden"}}
+                                    >
+                                  ...
+                                ...
+                  ...
+ 
+    at <unknown> (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+    at runWithFiberInDEV (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at emitPendingHydrationWarnings (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3438:13)
+    at completeWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6885:102)
+    at runWithFiberInDEV (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:131)
+    at completeUnitOfWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9622:23)
+    at performUnitOfWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9557:28)
+    at workLoopConcurrentByScheduler (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9551:58)
+    at renderRootConcurrent (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9534:71)
+    at performWorkOnRoot (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64) (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+[browser] Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly. (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_115brz8._.js:2431:13)
+ GET / 200 in 345ms (next.js: 196ms, application-code: 149ms)
+ GET / 200 in 125ms (next.js: 70ms, application-code: 54ms)
+ GET / 200 in 52ms (next.js: 2ms, application-code: 50ms)
+ GET / 200 in 58ms (next.js: 2ms, application-code: 56ms)
+ GET / 200 in 60ms (next.js: 1309µs, application-code: 59ms)
+ GET / 200 in 72ms (next.js: 3ms, application-code: 68ms)
+ GET / 200 in 77ms (next.js: 5ms, application-code: 73ms)
+ GET / 200 in 69ms (next.js: 4ms, application-code: 65ms)
+ GET / 200 in 45ms (next.js: 4ms, application-code: 41ms)
+ GET / 200 in 20ms (next.js: 2ms, application-code: 18ms)
+ GET / 200 in 111ms (next.js: 60ms, application-code: 51ms)
+ GET / 200 in 71ms (next.js: 2ms, application-code: 69ms)
+ GET / 200 in 69ms (next.js: 4ms, application-code: 65ms)
+ GET / 200 in 57ms (next.js: 4ms, application-code: 53ms)
+ GET / 200 in 48ms (next.js: 1468µs, application-code: 46ms)
+ GET / 200 in 55ms (next.js: 1761µs, application-code: 53ms)
+ GET / 200 in 54ms (next.js: 1419µs, application-code: 53ms)
+ GET / 200 in 54ms (next.js: 2ms, application-code: 52ms)
+ GET / 200 in 31ms (next.js: 1797µs, application-code: 29ms)
+ GET / 200 in 17ms (next.js: 3ms, application-code: 14ms)
+ GET / 200 in 137ms (next.js: 5ms, application-code: 132ms)
+ GET /env 404 in 52ms (next.js: 17ms, application-code: 35ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <head>
+                          <body
+-                           className="clickup-chrome-ext_installed"
+                          >
+                            ...
+                              <HomePage>
+                                <NavPill>
+                                <main>
+                                  <HexagonMirror>
+                                  <FogToClarity>
+                                  <DesignedForDepth>
+                                  <BeingSeen>
+                                    <section
++                                     className="section"
+-                                     className="section containerWrapper"
+                                      style={{background:"var(--bg-t...",overflow:"hidden"}}
+                                    >
+                                  ...
+                                ...
+                  ...
+ 
+    at <unknown> (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+    at runWithFiberInDEV (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at emitPendingHydrationWarnings (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3438:13)
+    at completeWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6885:102)
+    at runWithFiberInDEV (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:131)
+    at completeUnitOfWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9622:23)
+    at performUnitOfWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9557:28)
+    at workLoopConcurrentByScheduler (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9551:58)
+    at renderRootConcurrent (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9534:71)
+    at performWorkOnRoot (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64) (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+[browser] Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly. (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_115brz8._.js:2431:13)
+✓ Compiled in 29ms
+ GET / 200 in 74ms (next.js: 18ms, application-code: 56ms)
+ GET /env 404 in 30ms (next.js: 3ms, application-code: 27ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <head>
+                          <body
+-                           className="clickup-chrome-ext_installed"
+                          >
+                            ...
+                              <main>
+                                <HexagonMirror>
+                                <FogToClarity>
+                                <DesignedForDepth>
+                                  <section ref={{current:null}} style={{position:"...", ...}}>
+                                    <div
+                                      style={{position:"sticky",top:0,left:0,width:"100%",height:"100dvh",overflow:"hidden",display:"flex", ...}}
+-                                     className="containerWrapper"
+                                    >
+                                    ...
+                                ...
+                  ...
+ 
+    at <unknown> (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+    at runWithFiberInDEV (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at emitPendingHydrationWarnings (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3438:13)
+    at completeWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6885:102)
+    at runWithFiberInDEV (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:131)
+    at completeUnitOfWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9622:23)
+    at performUnitOfWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9557:28)
+    at workLoopConcurrentByScheduler (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9551:58)
+    at renderRootConcurrent (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9534:71)
+    at performWorkOnRoot (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64) (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+[browser] Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly. (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_115brz8._.js:2431:13)
+✓ Compiled in 68ms
+ GET / 200 in 65ms (next.js: 11ms, application-code: 55ms)
+ GET /env 404 in 33ms (next.js: 6ms, application-code: 27ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <head>
+                          <body
+-                           className="clickup-chrome-ext_installed"
+                          >
+                            ...
+                              <HomePage>
+                                <NavPill>
+                                <main>
+                                  <HexagonMirror>
+                                  <FogToClarity>
+                                  <DesignedForDepth>
+                                    <section
++                                     className="section"
+-                                     className="section containerWrapper"
+                                      style={{background:"var(--bg-s..."}}
+                                    >
+                                  ...
+                                ...
+                  ...
+ 
+    at <unknown> (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+    at runWithFiberInDEV (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at emitPendingHydrationWarnings (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3438:13)
+    at completeWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6885:102)
+    at runWithFiberInDEV (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:131)
+    at completeUnitOfWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9622:23)
+    at performUnitOfWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9557:28)
+    at workLoopConcurrentByScheduler (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9551:58)
+    at renderRootConcurrent (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9534:71)
+    at performWorkOnRoot (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64) (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+[browser] Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly. (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_115brz8._.js:2431:13)
+✓ Compiled in 139ms
+ GET /logos-checkout 200 in 63ms (next.js: 35ms, application-code: 29ms)
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_115brz8._.js:2431:13)
+ GET /logos-checkout 200 in 132ms (next.js: 4ms, application-code: 127ms)
+ GET /env 404 in 37ms (next.js: 8ms, application-code: 28ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/logos-che..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <head>
+                          <body
+-                           className="clickup-chrome-ext_installed"
+                          >
+                            ...
+                              <SegmentViewNode type="page" pagePath="logos-chec...">
+                                <SegmentTrieNode>
+                                <IndividualCheckoutPage>
+                                  <NavPill>
+                                  <main
+                                    style={{minHeight:"100dvh",background:"var(--bg-g...",paddingTop:"calc(3rem ...", ...}}
+-                                   className="containerWrapper"
+                                  >
+                                  ...
+                              ...
+                  ...
+ 
+    at <unknown> (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+    at runWithFiberInDEV (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at emitPendingHydrationWarnings (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3438:13)
+    at completeWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6885:102)
+    at runWithFiberInDEV (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:131)
+    at completeUnitOfWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9622:23)
+    at performUnitOfWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9557:28)
+    at workLoopConcurrentByScheduler (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9551:58)
+    at renderRootConcurrent (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9534:71)
+    at performWorkOnRoot (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64) (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+ GET / 200 in 17ms (next.js: 6ms, application-code: 12ms)
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_115brz8._.js:2431:13)
+[browser] Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly. (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_115brz8._.js:2431:13)
+✓ Compiled in 24ms
+ GET / 200 in 96ms (next.js: 28ms, application-code: 68ms)
+ GET /env 404 in 33ms (next.js: 4ms, application-code: 29ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <head>
+                          <body
+-                           className="clickup-chrome-ext_installed"
+                          >
+                            ...
+                              <HomePage>
+                                <NavPill>
+                                <main>
+                                  <HexagonMirror>
+                                  <FogToClarity>
+                                  <DesignedForDepth>
+                                    <section
+                                      ref={{current:null}}
++                                     className="section"
+-                                     className="section containerWrapper"
+                                      style={{background:"var(--bg-s..."}}
+                                    >
+                                  ...
+                                ...
+                  ...
+ 
+    at <unknown> (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+    at runWithFiberInDEV (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at emitPendingHydrationWarnings (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3438:13)
+    at completeWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6885:102)
+    at runWithFiberInDEV (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:131)
+    at completeUnitOfWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9622:23)
+    at performUnitOfWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9557:28)
+    at workLoopConcurrentByScheduler (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9551:58)
+    at renderRootConcurrent (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9534:71)
+    at performWorkOnRoot (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64) (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+[browser] Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly. (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_115brz8._.js:2431:13)
+✓ Compiled in 54ms
+✓ Compiled in 75ms
+ GET / 200 in 130ms (next.js: 12ms, application-code: 118ms)
+ GET / 200 in 45ms (next.js: 9ms, application-code: 36ms)
+✓ Compiled in 411ms
+[browser] ./components/DesignedForDepth.tsx:110:1
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/DesignedForDepth.tsx
+    ./app/page.tsx 
+    at handleErrors (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./components/DesignedForDepth.tsx:110:1
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/DesignedForDepth.tsx
+    ./app/page.tsx 
+    at handleErrors (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+✓ Compiled in 42ms
+ GET / 200 in 84ms (next.js: 31ms, application-code: 53ms)
+ GET / 200 in 18ms (next.js: 1491µs, application-code: 16ms)
+✓ Compiled in 18ms
+✓ Compiled in 54ms
+✓ Compiled in 185ms
+✓ Compiled in 23ms
+✓ Compiled in 72ms
+✓ Compiled in 12ms
+ GET / 200 in 117ms (next.js: 20ms, application-code: 98ms)
+ GET /env 404 in 41ms (next.js: 8ms, application-code: 32ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <head>
+                          <body
+-                           className="clickup-chrome-ext_installed"
+                          >
+                            ...
+                              <main>
+                                <HexagonMirror>
+                                <DesignedForDepth>
+                                  <section ref={{current:null}} style={{position:"...", ...}}>
+                                    <div
+                                      style={{position:"sticky",top:0,left:0,width:"100%",height:"100dvh",overflow:"hidden",display:"flex", ...}}
+-                                     className="containerWrapper"
+                                    >
+                                    ...
+                                ...
+                  ...
+ 
+    at <unknown> (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+    at runWithFiberInDEV (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at emitPendingHydrationWarnings (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3438:13)
+    at completeWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6885:102)
+    at runWithFiberInDEV (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:131)
+    at completeUnitOfWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9622:23)
+    at performUnitOfWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9557:28)
+    at workLoopConcurrentByScheduler (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9551:58)
+    at renderRootConcurrent (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9534:71)
+    at performWorkOnRoot (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64) (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+[browser] Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly. (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_115brz8._.js:2431:13)
+✓ Compiled in 45ms
+ GET / 200 in 86ms (next.js: 13ms, application-code: 73ms)
+ GET /env 404 in 32ms (next.js: 5ms, application-code: 27ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <head>
+                          <body
+-                           className="clickup-chrome-ext_installed"
+                          >
+                            ...
+                              <main>
+                                <HexagonMirror>
+                                <DesignedForDepth>
+                                  <section ref={{current:null}} style={{position:"...", ...}}>
+                                    <div
+                                      style={{position:"sticky",top:0,left:0,width:"100%",height:"100dvh",overflow:"hidden",display:"flex", ...}}
+-                                     className="containerWrapper"
+                                    >
+                                    ...
+                                ...
+                  ...
+ 
+    at <unknown> (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+    at runWithFiberInDEV (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at emitPendingHydrationWarnings (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3438:13)
+    at completeWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6885:102)
+    at runWithFiberInDEV (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:131)
+    at completeUnitOfWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9622:23)
+    at performUnitOfWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9557:28)
+    at workLoopConcurrentByScheduler (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9551:58)
+    at renderRootConcurrent (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9534:71)
+    at performWorkOnRoot (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64) (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+[browser] Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly. (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_115brz8._.js:2431:13)
+ GET / 200 in 287ms (next.js: 141ms, application-code: 147ms)
+ GET / 200 in 131ms (next.js: 5ms, application-code: 126ms)
+ GET / 200 in 72ms (next.js: 3ms, application-code: 69ms)
+ GET / 200 in 60ms (next.js: 3ms, application-code: 57ms)
+ GET / 200 in 57ms (next.js: 2ms, application-code: 54ms)
+ GET / 200 in 53ms (next.js: 1981µs, application-code: 51ms)
+ GET / 200 in 52ms (next.js: 3ms, application-code: 49ms)
+ GET / 200 in 45ms (next.js: 3ms, application-code: 43ms)
+ GET / 200 in 32ms (next.js: 3ms, application-code: 29ms)
+ GET / 200 in 17ms (next.js: 2ms, application-code: 15ms)
+✓ Compiled in 94ms
+✓ Compiled in 237ms
+✓ Compiled in 81ms
+✓ Compiled in 16ms
+✓ Compiled in 32ms
+ GET / 200 in 220ms (next.js: 9ms, application-code: 211ms)
+ GET /env 404 in 44ms (next.js: 21ms, application-code: 23ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <head>
+                          <body
+-                           className="clickup-chrome-ext_installed"
+                          >
+                            ...
+                              <HomePage>
+                                <NavPill>
+                                <main>
+                                  <HexagonMirror>
+                                  <LabelVsPortrait>
+                                    <section
++                                     className="section"
+-                                     className="section containerWrapper"
+                                      style={{background:"var(--bg-s...",overflow:"hidden"}}
+                                    >
+                                  ...
+                                ...
+                  ...
+ 
+    at <unknown> (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+    at runWithFiberInDEV (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at emitPendingHydrationWarnings (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3438:13)
+    at completeWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6885:102)
+    at runWithFiberInDEV (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:131)
+    at completeUnitOfWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9622:23)
+    at performUnitOfWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9557:28)
+    at workLoopConcurrentByScheduler (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9551:58)
+    at renderRootConcurrent (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9534:71)
+    at performWorkOnRoot (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64) (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+[browser] Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly. (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_115brz8._.js:2431:13)
+✓ Compiled in 36ms
+✓ Compiled in 68ms
+✓ Compiled in 29ms
+✓ Compiled in 21ms
+ GET / 200 in 416ms (next.js: 255ms, application-code: 161ms)
+ GET / 200 in 679ms (next.js: 10ms, application-code: 669ms)
+ GET / 200 in 573ms (next.js: 9ms, application-code: 565ms)
+ GET / 200 in 25ms (next.js: 5ms, application-code: 21ms)
+✓ Compiled in 112ms
+✓ Compiled in 42ms
+ GET /logos-checkout 200 in 71ms (next.js: 29ms, application-code: 42ms)
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_115brz8._.js:2431:13)
+✓ Compiled in 18ms
+ GET / 200 in 46ms (next.js: 26ms, application-code: 21ms)
+✓ Compiled in 46ms
+ GET / 200 in 244ms (next.js: 12ms, application-code: 232ms)
+ GET /env 404 in 40ms (next.js: 15ms, application-code: 25ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <head>
+                          <body
+-                           className="clickup-chrome-ext_installed"
+                          >
+                            ...
+                              <HomePage>
+                                <NavPill>
+                                <main>
+                                  <HexagonMirror>
+                                  <LabelVsPortrait>
+                                    <section
++                                     className="section"
+-                                     className="section containerWrapper"
+                                      style={{background:"var(--bg-s...",overflow:"hidden"}}
+                                    >
+                                  ...
+                                ...
+                  ...
+ 
+    at <unknown> (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+    at runWithFiberInDEV (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at emitPendingHydrationWarnings (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3438:13)
+    at completeWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6885:102)
+    at runWithFiberInDEV (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:131)
+    at completeUnitOfWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9622:23)
+    at performUnitOfWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9557:28)
+    at workLoopConcurrentByScheduler (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9551:58)
+    at renderRootConcurrent (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9534:71)
+    at performWorkOnRoot (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64) (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+[browser] Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly. (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_115brz8._.js:2431:13)
+✓ Compiled in 49ms
+✓ Compiled in 80ms
+✓ Compiled in 24ms
+✓ Compiled in 24ms
+ GET / 200 in 109ms (next.js: 17ms, application-code: 92ms)
+ GET /env 404 in 45ms (next.js: 6ms, application-code: 39ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <head>
+                          <body
+-                           className="clickup-chrome-ext_installed"
+                          >
+                            ...
+                              <HomePage>
+                                <NavPill>
+                                <main>
+                                  <HexagonMirror>
+                                  <LabelVsPortrait>
+                                    <section
++                                     className="section"
+-                                     className="section containerWrapper"
+                                      style={{background:"var(--bg-s...",overflow:"hidden"}}
+                                    >
+                                  ...
+                                ...
+                  ...
+ 
+    at <unknown> (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+    at runWithFiberInDEV (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at emitPendingHydrationWarnings (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3438:13)
+    at completeWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6885:102)
+    at runWithFiberInDEV (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:131)
+    at completeUnitOfWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9622:23)
+    at performUnitOfWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9557:28)
+    at workLoopConcurrentByScheduler (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9551:58)
+    at renderRootConcurrent (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9534:71)
+    at performWorkOnRoot (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64) (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+[browser] Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly. (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_115brz8._.js:2431:13)
+✓ Compiled in 89ms
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <head>
+                          <body
+-                           className="clickup-chrome-ext_installed"
+                          >
+                            ...
+                              <HomePage>
+                                <NavPill>
+                                <main>
+                                  <HexagonMirror>
+                                  <LabelVsPortrait>
+                                    <section
++                                     className="section"
+-                                     className="section containerWrapper"
+                                      style={{background:"var(--bg-s...",overflow:"hidden"}}
+                                    >
+                                  ...
+                                ...
+                  ...
+ 
+    at <unknown> (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+    at runWithFiberInDEV (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at emitPendingHydrationWarnings (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3438:13)
+    at completeWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6885:102)
+    at runWithFiberInDEV (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:131)
+    at completeUnitOfWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9622:23)
+    at performUnitOfWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9557:28)
+    at workLoopConcurrentByScheduler (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9551:58)
+    at renderRootConcurrent (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9534:71)
+    at performWorkOnRoot (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64) (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+[browser] ./components/DesignedForDepth.tsx:110:1
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/DesignedForDepth.tsx
+    ./app/page.tsx 
+    at handleErrors (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./components/DesignedForDepth.tsx:110:1
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/DesignedForDepth.tsx
+    ./app/page.tsx 
+    at handleErrors (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+ GET / 200 in 186ms (next.js: 35ms, application-code: 151ms)
+ GET /env 404 in 56ms (next.js: 5ms, application-code: 51ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <head>
+                          <body
+-                           className="clickup-chrome-ext_installed"
+                          >
+                            ...
+                              <HomePage>
+                                <NavPill>
+                                <main>
+                                  <HexagonMirror>
+                                  <LabelVsPortrait>
+                                    <section
++                                     className="section"
+-                                     className="section containerWrapper"
+                                      style={{background:"var(--bg-s...",overflow:"hidden"}}
+                                    >
+                                  ...
+                                ...
+                  ...
+ 
+    at <unknown> (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+    at runWithFiberInDEV (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at emitPendingHydrationWarnings (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3438:13)
+    at completeWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6885:102)
+    at runWithFiberInDEV (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:131)
+    at completeUnitOfWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9622:23)
+    at performUnitOfWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9557:28)
+    at workLoopConcurrentByScheduler (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9551:58)
+    at renderRootConcurrent (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9534:71)
+    at performWorkOnRoot (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64) (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+[browser] Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly. (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_115brz8._.js:2431:13)
+✓ Compiled in 152ms
+ GET / 200 in 591ms (next.js: 355ms, application-code: 235ms)
+ GET / 200 in 203ms (next.js: 77ms, application-code: 126ms)
+ GET / 200 in 100ms (next.js: 3ms, application-code: 97ms)
+ GET / 200 in 103ms (next.js: 1878µs, application-code: 101ms)
+ GET / 200 in 53ms (next.js: 4ms, application-code: 49ms)
+ GET / 200 in 49ms (next.js: 3ms, application-code: 46ms)
+ GET / 200 in 48ms (next.js: 3ms, application-code: 46ms)
+ GET / 200 in 48ms (next.js: 2ms, application-code: 46ms)
+ GET / 200 in 35ms (next.js: 3ms, application-code: 32ms)
+ GET / 200 in 20ms (next.js: 3ms, application-code: 17ms)
+✓ Compiled in 293ms
+ GET / 200 in 441ms (next.js: 252ms, application-code: 189ms)
+ GET / 200 in 125ms (next.js: 3ms, application-code: 122ms)
+ GET / 200 in 109ms (next.js: 12ms, application-code: 98ms)
+ GET / 200 in 27ms (next.js: 5ms, application-code: 22ms)
+ GET / 200 in 218ms (next.js: 9ms, application-code: 209ms)
+ GET /env 404 in 38ms (next.js: 15ms, application-code: 23ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <head>
+                          <body
+-                           className="clickup-chrome-ext_installed"
+                          >
+                            ...
+                              <HomePage>
+                                <NavPill>
+                                <main>
+                                  <HexagonMirror>
+                                  <LabelVsPortrait>
+                                    <section
++                                     className="section"
+-                                     className="section containerWrapper"
+                                      style={{background:"var(--bg-s...",overflow:"hidden"}}
+                                    >
+                                  ...
+                                ...
+                  ...
+ 
+    at <unknown> (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+    at runWithFiberInDEV (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at emitPendingHydrationWarnings (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3438:13)
+    at completeWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6885:102)
+    at runWithFiberInDEV (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:131)
+    at completeUnitOfWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9622:23)
+    at performUnitOfWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9557:28)
+    at workLoopConcurrentByScheduler (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9551:58)
+    at renderRootConcurrent (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9534:71)
+    at performWorkOnRoot (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64) (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+[browser] Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly. (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_115brz8._.js:2431:13)
+✓ Compiled in 32ms
+ GET / 200 in 98ms (next.js: 18ms, application-code: 80ms)
+ GET /env 404 in 43ms (next.js: 3ms, application-code: 40ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <head>
+                          <body
+-                           className="clickup-chrome-ext_installed"
+                          >
+                            ...
+                              <HomePage>
+                                <NavPill>
+                                <main>
+                                  <HexagonMirror>
+                                  <LabelVsPortrait>
+                                    <section
++                                     className="section"
+-                                     className="section containerWrapper"
+                                      style={{background:"var(--bg-s...",overflow:"hidden"}}
+                                    >
+                                  ...
+                                ...
+                  ...
+ 
+    at <unknown> (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+    at runWithFiberInDEV (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at emitPendingHydrationWarnings (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3438:13)
+    at completeWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6885:102)
+    at runWithFiberInDEV (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:131)
+    at completeUnitOfWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9622:23)
+    at performUnitOfWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9557:28)
+    at workLoopConcurrentByScheduler (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9551:58)
+    at renderRootConcurrent (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9534:71)
+    at performWorkOnRoot (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64) (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+[browser] Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly. (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_115brz8._.js:2431:13)
+✓ Compiled in 43ms
+ GET / 200 in 110ms (next.js: 31ms, application-code: 79ms)
+ GET /env 404 in 32ms (next.js: 5ms, application-code: 27ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <head>
+                          <body
+-                           className="clickup-chrome-ext_installed"
+                          >
+                            ...
+                              <HomePage>
+                                <NavPill>
+                                <main>
+                                  <HexagonMirror>
+                                  <LabelVsPortrait>
+                                    <section
++                                     className="section"
+-                                     className="section containerWrapper"
+                                      style={{background:"var(--bg-s...",overflow:"hidden"}}
+                                    >
+                                  ...
+                                ...
+                  ...
+ 
+    at <unknown> (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+    at runWithFiberInDEV (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at emitPendingHydrationWarnings (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3438:13)
+    at completeWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6885:102)
+    at runWithFiberInDEV (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:131)
+    at completeUnitOfWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9622:23)
+    at performUnitOfWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9557:28)
+    at workLoopConcurrentByScheduler (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9551:58)
+    at renderRootConcurrent (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9534:71)
+    at performWorkOnRoot (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64) (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+[browser] Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly. (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_115brz8._.js:2431:13)
+✓ Compiled in 52ms
+ GET / 200 in 107ms (next.js: 15ms, application-code: 92ms)
+ GET /env 404 in 28ms (next.js: 3ms, application-code: 24ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <head>
+                          <body
+-                           className="clickup-chrome-ext_installed"
+                          >
+                            ...
+                              <HomePage>
+                                <NavPill>
+                                <main>
+                                  <HexagonMirror>
+                                  <LabelVsPortrait>
+                                    <section
++                                     className="section"
+-                                     className="section containerWrapper"
+                                      style={{background:"var(--bg-s...",overflow:"hidden"}}
+                                    >
+                                  ...
+                                ...
+                  ...
+ 
+    at <unknown> (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+    at runWithFiberInDEV (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at emitPendingHydrationWarnings (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3438:13)
+    at completeWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6885:102)
+    at runWithFiberInDEV (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:131)
+    at completeUnitOfWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9622:23)
+    at performUnitOfWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9557:28)
+    at workLoopConcurrentByScheduler (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9551:58)
+    at renderRootConcurrent (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9534:71)
+    at performWorkOnRoot (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64) (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+[browser] Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly. (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_115brz8._.js:2431:13)
+✓ Compiled in 15ms
+ GET /logos-checkout 200 in 80ms (next.js: 43ms, application-code: 36ms)
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_115brz8._.js:2431:13)
+✓ Compiled in 20ms
+✓ Compiled in 14ms
+✓ Compiled in 97ms
+✓ Compiled in 381ms
+✓ Compiled in 893ms
+⨯ ./components/NavPill.tsx:259:27
+Expected '</', got 'jsx text'
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/NavPill.tsx
+    ./app/page.tsx
+
+
+ GET / 500 in 386ms (next.js: 186ms, application-code: 200ms)
+⨯ ./components/NavPill.tsx:259:27
+Expected '</', got 'jsx text'
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/NavPill.tsx
+    ./app/page.tsx
+
+
+⨯ ./components/NavPill.tsx:259:27
+Expected '</', got 'jsx text'
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/NavPill.tsx
+    ./app/page.tsx
+
+
+ GET / 500 in 44ms (next.js: 18ms, application-code: 27ms)
+ GET / 500 in 28ms (next.js: 14ms, application-code: 14ms)
+⨯ ./components/NavPill.tsx:259:27
+Expected '</', got 'jsx text'
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/NavPill.tsx
+    ./app/page.tsx
+
+
+ GET / 500 in 133ms (next.js: 7ms, application-code: 126ms)
+⨯ ./components/NavPill.tsx:259:27
+Expected '</', got 'jsx text'
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/NavPill.tsx
+    ./app/page.tsx
+
+
+[browser] Uncaught Error: ./components/NavPill.tsx:259:27
+Expected '</', got 'jsx text'
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/NavPill.tsx
+    ./app/page.tsx
+
+
+    at <unknown> (Error: ./components/NavPill.tsx:259:27)
+    at <unknown> (Error: (./components/NavPill.tsx:259:27)
+ GET /env 500 in 13ms (next.js: 4ms, application-code: 9ms)
+ GET / 200 in 1097ms (next.js: 515ms, application-code: 582ms)
+ GET / 200 in 467ms (next.js: 87ms, application-code: 381ms)
+ GET /env 404 in 87ms (next.js: 26ms, application-code: 61ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <head>
+                          <body
+-                           className="clickup-chrome-ext_installed"
+                          >
+                            ...
+                              <HomePage>
+                                <NavPill>
+                                <main>
+                                  ...
+                                    <div tabIndex={0} style={{display:"i..."}} ref={function useMotionRef.useCallback}>
+                                      <LinkComponent id="hero-cta" href="https://bu..." onClick={undefined} ...>
+                                        <a
+                                          id="hero-cta"
+                                          className="cta-button-inner"
+                                          style={{display:"inline-flex",alignItems:"center",gap:"0.5rem",padding:"1rem 1rem ...", ...}}
+                                          ref={function}
+                                          onClick={function onClick}
+                                          onMouseEnter={function onMouseEnter}
+                                          onTouchStart={function onTouchStart}
++                                         href="https://buy.stripe.com/eVq00j48D9ofgf25ssfIs1c"
+-                                         href="/logos-checkout"
+                                        >
+                                  <LabelVsPortrait>
+                                    <section
++                                     className="section"
+-                                     className="section containerWrapper"
+                                      style={{background:"var(--bg-s...",overflow:"hidden"}}
+                                    >
+                                  ...
+                                ...
+                  ...
+ 
+    at <unknown> (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+    at runWithFiberInDEV (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at emitPendingHydrationWarnings (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3438:13)
+    at completeWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6885:102)
+    at runWithFiberInDEV (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:131)
+    at completeUnitOfWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9622:23)
+    at performUnitOfWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9557:28)
+    at workLoopConcurrentByScheduler (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9551:58)
+    at renderRootConcurrent (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9534:71)
+    at performWorkOnRoot (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64) (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+[browser] Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly. (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_115brz8._.js:2431:13)
+ GET / 200 in 117ms (next.js: 26ms, application-code: 91ms)
+ GET /env 404 in 22ms (next.js: 2ms, application-code: 20ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <head>
+                          <body
+-                           className="clickup-chrome-ext_installed"
+                          >
+                            ...
+                              <HomePage>
+                                <NavPill>
+                                <main>
+                                  <HexagonMirror>
+                                  <LabelVsPortrait>
+                                    <section
++                                     className="section"
+-                                     className="section containerWrapper"
+                                      style={{background:"var(--bg-s...",overflow:"hidden"}}
+                                    >
+                                  ...
+                                ...
+                  ...
+ 
+    at <unknown> (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+    at runWithFiberInDEV (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at emitPendingHydrationWarnings (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3438:13)
+    at completeWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6885:102)
+    at runWithFiberInDEV (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:131)
+    at completeUnitOfWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9622:23)
+    at performUnitOfWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9557:28)
+    at workLoopConcurrentByScheduler (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9551:58)
+    at renderRootConcurrent (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9534:71)
+    at performWorkOnRoot (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64) (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+[browser] Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly. (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_115brz8._.js:2431:13)
+ GET / 200 in 72ms (next.js: 8ms, application-code: 64ms)
+ GET /env 404 in 47ms (next.js: 7ms, application-code: 40ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <ScrollAndMaybeFocusHandler cacheNode={{rsc:{...}, ...}}>
+      <InnerScrollAndFocusHandlerOld focusAndScrollRef={{scrollRef:null, ...}} cacheNode={{rsc:{...}, ...}}>
+        <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+          <LoadingBoundary name="/" loading={null}>
+            <HTTPAccessFallbackBoundary notFound={{...}} forbidden={undefined} unauthorized={undefined}>
+              <HTTPAccessFallbackErrorBoundary pathname="/" notFound={{...}} forbidden={undefined} ...>
+                <RedirectBoundary>
+                  <RedirectErrorBoundary router={{...}}>
+                    <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:{...}, ...}} segmentPath={[...]} ...>
+                      <SegmentViewNode type="page" pagePath="page.tsx">
+                        <SegmentTrieNode>
+                        <HomePage>
+                          <NavPill>
+                          <main>
+                            <HexagonMirror>
+                            <LabelVsPortrait>
+                              <section
++                               className="section"
+-                               className="section containerWrapper"
+                                style={{background:"var(--bg-s...",overflow:"hidden"}}
+                              >
+                            ...
+                          ...
+                      ...
+                    ...
+        ...
+ 
+    at <unknown> (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+    at runWithFiberInDEV (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at emitPendingHydrationWarnings (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3438:13)
+    at completeWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6885:102)
+    at runWithFiberInDEV (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:131)
+    at completeUnitOfWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9622:23)
+    at performUnitOfWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9557:28)
+    at workLoopConcurrentByScheduler (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9551:58)
+    at renderRootConcurrent (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9534:71)
+    at performWorkOnRoot (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64) (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+[browser] Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly. (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_115brz8._.js:2431:13)
+ GET /logos-checkout 200 in 37ms (next.js: 18ms, application-code: 20ms)
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_115brz8._.js:2431:13)
+✓ Compiled in 107ms
+[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+    at dispatchAppRouterAction (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:916:37)
+    at <unknown> (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:11800:61)
+    at startTransition (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:1279:31)
+    at Object.hmrRefresh (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:11799:40)
+    at <unknown> (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13967:64)
+    at startTransition (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:1279:31)
+    at processMessage (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13966:44)
+    at WebSocket.handleMessage (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52)
+✓ Compiled in 65ms
+✓ Compiled in 35ms
+ GET /logos-checkout 200 in 219ms (next.js: 10ms, application-code: 209ms)
+ GET /env 404 in 36ms (next.js: 8ms, application-code: 28ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/logos-che..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <head>
+                          <body
+-                           className="clickup-chrome-ext_installed"
+                          >
+                            ...
+                              <SegmentViewNode type="page" pagePath="logos-chec...">
+                                <SegmentTrieNode>
+                                <IndividualCheckoutPage>
+                                  <NavPill>
+                                  <main
+                                    style={{minHeight:"100dvh",background:"var(--bg-g...",paddingTop:"calc(3rem ...", ...}}
+-                                   className="containerWrapper"
+                                  >
+                                  ...
+                              ...
+                  ...
+ 
+    at <unknown> (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+    at runWithFiberInDEV (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at emitPendingHydrationWarnings (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3438:13)
+    at completeWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6885:102)
+    at runWithFiberInDEV (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:131)
+    at completeUnitOfWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9622:23)
+    at performUnitOfWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9557:28)
+    at workLoopConcurrentByScheduler (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9551:58)
+    at renderRootConcurrent (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9534:71)
+    at performWorkOnRoot (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64) (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+ GET / 200 in 75ms (next.js: 9ms, application-code: 66ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <head>
+                          <body
+-                           className="clickup-chrome-ext_installed"
+                          >
+                  ...
+ 
+    at <unknown> (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+    at runWithFiberInDEV (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at emitPendingHydrationWarnings (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3438:13)
+    at completeWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6885:102)
+    at runWithFiberInDEV (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:131)
+    at completeUnitOfWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9622:23)
+    at performUnitOfWork (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9557:28)
+    at workLoopConcurrentByScheduler (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9551:58)
+    at renderRootConcurrent (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9534:71)
+    at performWorkOnRoot (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64) (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+[browser] Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly. (file:///Users/jamesseriph/Desktop/Logos Site - Antigravity/logos-app/.next/dev/static/chunks/node_modules_next_dist_115brz8._.js:2431:13)
+ GET /env 404 in 154ms (next.js: 5ms, application-code: 149ms)

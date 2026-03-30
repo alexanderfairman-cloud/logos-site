@@ -62,7 +62,7 @@ export default function RingDiagram({
         maxWidth: '100%',
         margin: '0 auto',
       }}
-      aria-label="Three-ring model: Core, Middle (Ego), and Outer (Traits)"
+      aria-label="Three-layer model: Core, Middle (Ego), and Outer (Traits)"
     >
       {/* Outer Ring — Ring 3: Traits (frosted white-blue with electric edges) */}
       <motion.div

@@ -38,7 +38,7 @@ const audiences = [
 
 export default function Applications() {
   return (
-    <section className="section" style={{ background: 'var(--bg-ground)' }}>
+    <section className="section" style={{ background: 'var(--bg-ground)', paddingTop: '3rem' }}>
       <div className="container">
         {/* Header */}
         <motion.div

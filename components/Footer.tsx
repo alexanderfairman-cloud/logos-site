@@ -17,7 +17,11 @@ const footerNav = [
     links: [
       { label: 'Science Overview', href: '/science-overlal' },
       { label: 'Leadership Effectiveness', href: '/leadership-science-effective' },
+      { label: 'Perceived Leadership', href: '/leadership-science-perceived' },
       { label: 'Durability', href: '/durability' },
+      { label: 'Ethics', href: '/leadership-science-ethics' },
+      { label: 'Employee Performance', href: '/employee-perf' },
+      { label: 'Employee Engagement', href: '/leadership-science-engagement' },
       { label: 'Innovation', href: '/leadership-science-innovation' },
     ],
   },

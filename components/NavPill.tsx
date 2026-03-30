@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Link from 'next/link'
+import Image from 'next/image'
 import CTAButton from './CTAButton'
 
 const navLinks = [
@@ -84,15 +85,19 @@ export default function NavPill() {
           <Link
             href="/"
             style={{
-              fontFamily: "'Clash Display', sans-serif",
-              fontWeight: 600,
-              fontSize: '1.125rem',
-              letterSpacing: '-0.02em',
-              color: 'var(--blue-deep)',
               flexShrink: 0,
+              display: 'flex',
+              alignItems: 'center',
             }}
           >
-            Logos
+            <Image 
+              src="/logos-icon.png"
+              alt="Logos"
+              width={32}
+              height={32}
+              style={{ objectFit: 'contain' }}
+              priority
+            />
           </Link>
 
           {/* Desktop nav links */}

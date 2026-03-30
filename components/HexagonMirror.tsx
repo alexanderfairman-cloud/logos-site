@@ -287,7 +287,7 @@ export default function HexagonMirror() {
   const indicatorOpacity = useTransform(scrollYProgress, [0, 0.08], [1, 0])
 
   return (
-    <div ref={containerRef} style={{ height: '400vh', position: 'relative' }}>
+    <div ref={containerRef} style={{ height: '340vh', position: 'relative' }}>
       <div style={{
         position: 'sticky', top: 0,
         height: '100dvh', minHeight: '100dvh',
@@ -391,7 +391,7 @@ export default function HexagonMirror() {
             letterSpacing: '-0.025em',
             color:         'var(--blue-deep)',
           }}>
-            in a single assessment.
+            in a single<br />assessment.
           </p>
         </motion.div>
 

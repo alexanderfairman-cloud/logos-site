@@ -553,7 +553,10 @@ export default function ScienceOverallPage() {
         {/* ── Testimonials ──────────────────────────────────────────────── */}
         <section className="section" style={{ background: 'var(--bg-ground)' }}>
           <div className="container">
-            <div
+          <motion.div {...fadeUp} style={{ textAlign: 'center', marginBottom: '2rem' }}>
+            <p className="eyebrow">What people are saying</p>
+          </motion.div>
+          <div
               style={{
                 display: 'grid',
                 gridTemplateColumns: 'repeat(3, 1fr)',

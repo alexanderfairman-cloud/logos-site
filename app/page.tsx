@@ -23,7 +23,7 @@ export default function HomePage() {
         {/* Scene 1B — Fog to Clarity (500vh sticky scroll) */}
         <FogToClarity />
 
-        {/* Scene 3 — The Three Rings */}
+        {/* Scene 3 — The Three Layers */}
         <ThreeRings />
 
         {/* Scene 4 — Applications (Individual / Coach / Teams) */}

@@ -39,7 +39,7 @@ export default function Invitation() {
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             style={{ textAlign: 'center', marginBottom: '3.5rem' }}
           >
-            <p className="eyebrow">What clients say</p>
+            <p className="eyebrow">What people are saying</p>
           </motion.div>
 
           <div
@@ -89,17 +89,6 @@ export default function Invitation() {
               Take the next step in your self knowledge and growth.
             </h2>
 
-            <p
-              className="display-md"
-              style={{
-                fontFamily: "'Clash Display', sans-serif",
-                fontWeight: 400,
-                color: 'var(--blue-electric)',
-                marginTop: '-0.5rem',
-              }}
-            >
-              Here it is.
-            </p>
 
             <div
               style={{
@@ -133,7 +122,7 @@ export default function Invitation() {
               {[
                 '40+ peer-reviewed studies',
                 '70+ traits measured',
-                '40+ countries',
+                'over 4 continents',
               ].map((badge) => (
                 <div
                   key={badge}

@@ -39,7 +39,7 @@ const deliverables = [
 ]
 
 const trust = [
-  'Used by coaches and leaders across 40+ countries',
+  'Used by coaches and leaders on over 4 continents',
   'No two profiles are alike',
   '100% Secure and Safe Payments',
 ]

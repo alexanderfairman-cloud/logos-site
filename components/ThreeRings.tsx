@@ -2,26 +2,27 @@
 
 import { motion } from 'framer-motion'
 import RingDiagram from './RingDiagram'
+import AnimatedCompass from './AnimatedCompass'
 
 const rings = [
   {
-    title: 'Ring 1 — The Core',
-    subtitle: 'Discover your intrinsic motivators.',
-    body: 'Your core archetypes are the specific experiences that generate your deepest fulfillment and motivation. Logos identifies them precisely so you stop chasing what looks right and start building toward what genuinely is.',
+    title: 'Layer 1 — The Core',
+    subtitle: 'Align your life choices with your intrinsic motivators',
+    body: 'Logos reveals the core values that generate fulfillment for you. By aligning your choices with these core values, you will be clear, energized, and able to let go of inauthentic distractions.',
     color: 'var(--blue-deep)',
     image: '/images/core_compass.png',
   },
   {
-    title: 'Ring 2 — The Middle',
-    subtitle: 'Understand your ego patterning and conditioning',
-    body: 'The structures your life built around your core. Some are your greatest strengths. Others are quietly costing you. Logos names them so you can choose which to keep and which to transform.',
+    title: 'Layer 2 — The Middle',
+    subtitle: 'Understand your ego patterning — and transcend it',
+    body: 'Logos reveals how the conditioning you experienced growing up shapes how you show up today. Some of these patterns are helpful and others are quietly costing you. Logos not only names them but shows you how to transcend them so you can be a better human.',
     color: 'var(--blue-mid)',
     image: '/images/ego_mask.png',
   },
   {
-    title: 'Ring 3 — The Outer',
-    subtitle: 'Your full traits profile',
-    body: 'The complete picture of your skills, your strengths, and the shadows that limit them. Logos maps both so you know exactly where to lean in and where to grow.',
+    title: 'Layer 3 — The Outer',
+    subtitle: 'Discover and develop your full traits profile',
+    body: "Logos doesn't just provide a complete picture of your strengths and weaknesses. It helps you identify exactly how to develop the 1–2 weaknesses that will help you achieve your major goals.",
     color: 'var(--blue-electric)',
     image: '/images/radar_chart.png',
   },
@@ -29,7 +30,7 @@ const rings = [
 
 export default function ThreeRings() {
   return (
-    <section className="section" style={{ background: 'var(--bg-surface)' }}>
+    <section className="section" style={{ background: 'var(--bg-surface)', paddingBottom: '3rem' }}>
       <div className="container">
         {/* Header */}
         <motion.div
@@ -45,7 +46,7 @@ export default function ThreeRings() {
           }}
         >
           <p className="eyebrow" style={{ marginBottom: '1rem' }}>
-            Three layers of self
+            The Logos model
           </p>
           <h2 className="display-md">
             Logos reveals you in three layers, each one essential.
@@ -84,16 +85,22 @@ export default function ThreeRings() {
                     maxWidth: '500px',
                     margin: '0 auto',
                     borderRadius: '24px',
-                    overflow: 'hidden',
+                    // AnimatedCompass uses absolute positioned children (labels + card)
+                    // that must overflow the container — so no overflow:hidden here
+                    overflow: i === 0 ? 'visible' : 'hidden',
                     direction: 'ltr',
                   }}
                 >
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img 
-                    src={ring.image}
-                    alt={`${ring.title} Graphic`}
-                    style={{ width: '100%', height: '100%', objectFit: 'contain', mixBlendMode: 'multiply' }} 
-                  />
+                  {i === 0 ? (
+                    <AnimatedCompass />
+                  ) : (
+                    /* eslint-disable-next-line @next/next/no-img-element */
+                    <img 
+                      src={ring.image}
+                      alt={`${ring.title} Graphic`}
+                      style={{ width: '100%', height: '100%', objectFit: 'contain', mixBlendMode: 'multiply' }} 
+                    />
+                  )}
                 </motion.div>
 
                 {/* Text Side */}
@@ -139,39 +146,7 @@ export default function ThreeRings() {
             )
           })}
 
-          {/* Alignment callout appended natively below the stack */}
-          <motion.div
-            initial={{ opacity: 0, y: 32 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: '-40px' }}
-            transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-            style={{
-              padding: '2rem 2.5rem',
-              background: 'linear-gradient(135deg, rgba(230, 243, 255, 0.4), rgba(245, 250, 255, 0.8))',
-              borderRadius: '24px',
-              border: '1px solid rgba(74, 144, 255, 0.15)',
-              borderLeft: '4px solid var(--blue-electric)',
-              display: 'flex',
-              flexDirection: 'column',
-              gap: '1rem',
-              maxWidth: '800px',
-              margin: '2rem auto 0 auto',
-              textAlign: 'center',
-            }}
-          >
-            <p
-              style={{
-                fontFamily: "'Plus Jakarta Sans', sans-serif",
-                fontSize: '1rem',
-                color: 'var(--blue-deep)',
-                lineHeight: 1.65,
-                fontWeight: 500
-              }}
-            >
-              When all three layers point in the same direction, that is the
-              experience of being completely and undeniably yourself.
-            </p>
-          </motion.div>
+
         </div>
       </div>
 

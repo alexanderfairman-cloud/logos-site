@@ -14,8 +14,8 @@ export default function TrustLine({ centered = false }: TrustLineProps) {
         textAlign: centered ? 'center' : 'left',
       }}
     >
-      Used by coaches, executives, and teams across{' '}
-      <span style={{ color: 'var(--blue-electric)', fontWeight: 600 }}>40+ countries</span>.
+      Used by coaches, executives, and teams on{' '}
+      <span style={{ color: 'var(--blue-electric)', fontWeight: 600 }}>over 4 continents</span>.
     </p>
   )
 }

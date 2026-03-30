@@ -467,7 +467,7 @@ export default function ForCoachesContent() {
             {...fadeUp}
             style={{ textAlign: 'center', marginBottom: '3.5rem' }}
           >
-            <p className="eyebrow">What coaches say</p>
+            <p className="eyebrow">What people are saying</p>
           </motion.div>
 
           <div

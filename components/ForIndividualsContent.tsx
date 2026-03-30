@@ -8,21 +8,21 @@ import RingDiagram from './RingDiagram'
 
 const contentSections = [
   {
-    ring: 'Ring 1 — The Core',
+    ring: 'Layer 1 — The Core',
     ringColor: 'var(--blue-deep)',
     headline: 'Discover Your Best Path Forward.',
     sectionTag: 'Clarify Purpose in Striking Clarity',
     body: 'Logos identifies your core archetypes — the specific experiences and environments that generate your deepest motivation and joy. When your work and relationships express these archetypes, you feel unstoppable. When they don\'t, no external success quite fills the gap.',
   },
   {
-    ring: 'Ring 2 — The Middle',
+    ring: 'Layer 2 — The Middle',
     ringColor: 'var(--blue-mid)',
     headline: 'See the patterns beneath your decisions.',
     sectionTag: 'What Has Been Running Your Life',
     body: 'Most of your behavioral patterns were formed before you were twenty. Some of them are your greatest strengths. Others have been quietly costing you relationships, opportunities, and years. Logos names each one so you can choose which to keep and which to release.',
   },
   {
-    ring: 'Ring 3 — The Outer',
+    ring: 'Layer 3 — The Outer',
     ringColor: 'var(--blue-electric)',
     headline: 'Know exactly where to lean in and where to grow.',
     sectionTag: 'Know Your Unique Strengths',
@@ -330,7 +330,7 @@ export default function ForIndividualsContent() {
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             style={{ textAlign: 'center', marginBottom: '3.5rem' }}
           >
-            <p className="eyebrow">What clients say</p>
+            <p className="eyebrow">What people are saying</p>
           </motion.div>
 
           <div

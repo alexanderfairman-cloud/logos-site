@@ -182,7 +182,7 @@ export default function LabelVsPortrait() {
                         fontSize: row.isLogos ? '1rem' : '0.9375rem',
                         fontWeight: row.isLogos ? 700 : 400,
                         color: row.isLogos ? 'var(--blue-deep)' : 'var(--text-body)',
-                        minWidth: '10ch',
+                        width: '180px',
                         flexShrink: 0,
                       }}
                     >
@@ -199,18 +199,7 @@ export default function LabelVsPortrait() {
                   </motion.div>
                 ))}
 
-                {/* Footer note */}
-                <p
-                  style={{
-                    padding: '0.875rem 1.5rem',
-                    fontSize: '0.75rem',
-                    color: 'var(--text-ghost)',
-                    fontStyle: 'italic',
-                    borderTop: '1px solid var(--border-hairline)',
-                  }}
-                >
-                  Because that&rsquo;s closer to how many dimensions it actually takes.
-                </p>
+
               </div>
             </div>
           </motion.div>
