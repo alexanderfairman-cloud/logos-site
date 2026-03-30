@@ -51,6 +51,7 @@ export default function FogToClarity() {
   return (
     <section
       ref={containerRef}
+      className="fog-clarity-root"
       style={{ position: 'relative', zIndex: 20, height: '360vh', width: '100%', backgroundColor: 'var(--bg-ground)' }}
     >
       {/* Sticky viewport */}
@@ -172,6 +173,13 @@ export default function FogToClarity() {
         </motion.div>
 
       </div>
+      <style>{`
+        @media (max-width: 768px) {
+          .fog-clarity-root {
+            height: 200vh !important;
+          }
+        }
+      `}</style>
     </section>
   )
 }

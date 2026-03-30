@@ -183,7 +183,8 @@ export default function LabelVsPortrait() {
                         fontWeight: row.isLogos ? 700 : 400,
                         color: row.isLogos ? 'var(--blue-deep)' : 'var(--text-body)',
                         width: '180px',
-                        flexShrink: 0,
+                        minWidth: '80px',
+                        flexShrink: 1,
                       }}
                     >
                       {row.name}

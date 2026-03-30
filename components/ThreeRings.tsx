@@ -152,9 +152,13 @@ export default function ThreeRings() {
 
       <style>{`
         @media (max-width: 768px) {
-          .rings-grid {
+          .ring-row {
             grid-template-columns: 1fr !important;
-            gap: 3rem !important;
+            direction: ltr !important;
+            gap: 2.5rem !important;
+          }
+          .rings-stack {
+            gap: 4rem !important;
           }
         }
       `}</style>

@@ -56,6 +56,7 @@ function FrameworkLabel({
   dx,
   dy,
   scrollYProgress,
+  className,
 }: {
   label: string
   top: string
@@ -64,6 +65,7 @@ function FrameworkLabel({
   dx: number
   dy: number
   scrollYProgress: MotionValue<number>
+  className?: string
 }) {
   // Hold at edges until 32%, drift small distance + dissolve by 48% — never reach center
   const opacity = useTransform(
@@ -76,6 +78,7 @@ function FrameworkLabel({
 
   return (
     <motion.span
+      className={className}
       style={{
         position:      'absolute',
         ...(left  ? { left  } : {}),
@@ -287,7 +290,7 @@ export default function HexagonMirror() {
   const indicatorOpacity = useTransform(scrollYProgress, [0, 0.08], [1, 0])
 
   return (
-    <div ref={containerRef} style={{ height: '340vh', position: 'relative' }}>
+    <div ref={containerRef} style={{ height: '340vh', position: 'relative' }} className="hexmirror-root">
       <div style={{
         position: 'sticky', top: 0,
         height: '100dvh', minHeight: '100dvh',
@@ -309,6 +312,7 @@ export default function HexagonMirror() {
             left={left} right={right}
             dx={dx} dy={dy}
             scrollYProgress={scrollYProgress}
+            className="framework-label-item"
           />
         ))}
 
@@ -466,6 +470,21 @@ export default function HexagonMirror() {
         @media (max-width: 640px) {
           .hero-headline {
             top: 57% !important;
+          }
+          .hexmirror-root {
+            height: 220vh !important;
+          }
+          .framework-label-item {
+            display: none !important;
+          }
+          .hero-bottom-cta {
+            bottom: 2rem !important;
+            padding-inline: 1.25rem !important;
+          }
+        }
+        @media (max-width: 768px) {
+          .framework-label-item {
+            display: none !important;
           }
         }
       `}</style>

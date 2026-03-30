@@ -231,6 +231,7 @@ export default function ForCoachesContent() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1], delay: 0.15 }}
               style={{ display: 'flex', justifyContent: 'center' }}
+              className="coaches-hero-illustration"
             >
               <ThreadIllustration />
             </motion.div>
@@ -562,6 +563,7 @@ export default function ForCoachesContent() {
         }
         @media (max-width: 768px) {
           .hero-grid-coaches { grid-template-columns: 1fr !important; gap: 2.5rem !important; }
+          .coaches-hero-illustration { display: none !important; }
           .coaches-section-row { grid-template-columns: 1fr !important; gap: 1.5rem !important; }
           .coaches-testimonials-grid { grid-template-columns: 1fr !important; }
           .framework-row { grid-template-columns: 1fr !important; gap: 0.5rem !important; }

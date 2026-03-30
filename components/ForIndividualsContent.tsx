@@ -146,6 +146,7 @@ export default function ForIndividualsContent() {
               initial={{ opacity: 0, scale: 0.85 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1], delay: 0.15 }}
+              className="hero-ring-diagram"
             >
               <RingDiagram animated={false} size={400} showLabels />
             </motion.div>
@@ -175,6 +176,7 @@ export default function ForIndividualsContent() {
                 {/* Ring indicator column */}
                 {i % 2 === 0 && (
                   <div
+                    className="ring-single-decorator"
                     style={{
                       display: 'flex',
                       alignItems: 'center',
@@ -217,6 +219,7 @@ export default function ForIndividualsContent() {
                 {/* Ring indicator column — right-side items */}
                 {i % 2 !== 0 && (
                   <div
+                    className="ring-single-decorator"
                     style={{
                       display: 'flex',
                       alignItems: 'center',
@@ -391,7 +394,9 @@ export default function ForIndividualsContent() {
         }
         @media (max-width: 768px) {
           .hero-grid { grid-template-columns: 1fr !important; gap: 2.5rem !important; }
+          .hero-ring-diagram { display: none !important; }
           .content-row { grid-template-columns: 1fr !important; }
+          .ring-single-decorator { display: none !important; }
           .testimonials-grid { grid-template-columns: 1fr !important; }
         }
         @media (max-width: 480px) {
