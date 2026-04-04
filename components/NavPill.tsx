@@ -26,7 +26,7 @@ export default function NavPill() {
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const pathname = usePathname()
-  const hideCheckoutCTA = pathname === '/session' || pathname === '/logos-individuals-beginti1cj4e4' || pathname === '/report'
+  const hideCheckoutCTA = pathname === '/session' || pathname === '/logos-individuals-beginti1cj4e4' || pathname === '/report' || pathname === '/logos-report-confirmationa2u8jwdt'
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40)

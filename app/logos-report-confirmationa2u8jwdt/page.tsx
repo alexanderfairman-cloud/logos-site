@@ -69,7 +69,7 @@ export default function ReportConfirmationPage() {
             </div>
 
             <CTAButton
-              href="https://welcometologos.com/report"
+              href="https://s.pointerpro.com/logosreporting"
               size="lg"
               id="report-confirm-cta"
             >
