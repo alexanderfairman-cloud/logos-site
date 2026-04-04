@@ -143,7 +143,7 @@ export default function ReportPage() {
                 </div>
 
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-                  <CTAButton href="https://su.vc/logosreport" size="lg" id="report-cta">
+                  <CTAButton href="https://s.pointerpro.com/logosreporting" size="lg" id="report-cta">
                     Begin Your Logos Assessment
                   </CTAButton>
                   <p className="body-sm" style={{ color: 'var(--text-ghost)' }}>
