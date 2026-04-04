@@ -113,9 +113,8 @@ export default function LabelVsPortrait() {
             </h2>
 
             <p className="body-lg">
-              Other assessments were never designed to reveal the complexity of
-              who you really are. Logos measures over 70 distinct traits across
-              every dimension of your personality, and no two profiles are alike.
+              Logos measures over 70 distinct traits across every dimension of
+              your personality, and no two profiles are alike.
             </p>
           </motion.div>
 

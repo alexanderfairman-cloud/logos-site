@@ -38,18 +38,8 @@ const steps = [
   },
   {
     number: '02',
-    title: 'Join your Logos Revelation Call.',
-    body: 'A trained Logos expert walks you through your results in a one-hour session. Your portrait comes alive in conversation.',
-  },
-  {
-    number: '03',
     title: 'Receive your Personal Codex Report.',
     body: 'A 30+ page portrait of your zone of genius, your growth edges, your core values, and your fastest path forward.',
-  },
-  {
-    number: '04',
-    title: 'Join your community.',
-    body: 'Connect with growth-oriented leaders and receive personalized introductions based on your profile.',
   },
 ]
 
@@ -254,7 +244,7 @@ export default function ForIndividualsContent() {
               The process
             </p>
             <h2 className="display-md">
-              Four steps to the clearest picture of yourself you&rsquo;ve ever
+              Two steps to the clearest picture of yourself you&rsquo;ve ever
               had.
             </h2>
           </motion.div>
@@ -262,8 +252,10 @@ export default function ForIndividualsContent() {
           <div
             style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(4, 1fr)',
+              gridTemplateColumns: 'repeat(2, 1fr)',
               gap: '1.5rem',
+              maxWidth: '760px',
+              marginInline: 'auto',
             }}
             className="steps-grid"
           >
@@ -320,6 +312,19 @@ export default function ForIndividualsContent() {
               </motion.div>
             ))}
           </div>
+
+          {/* CTA below steps */}
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-60px' }}
+            transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+            style={{ display: 'flex', justifyContent: 'center', marginTop: '2.5rem' }}
+          >
+            <CTAButton href="/logos-checkout" size="lg" id="individuals-process-cta">
+              Begin Your Logos &mdash; $38
+            </CTAButton>
+          </motion.div>
         </div>
       </section>
 
@@ -389,17 +394,12 @@ export default function ForIndividualsContent() {
       </section>
 
       <style>{`
-        @media (max-width: 900px) {
-          .steps-grid { grid-template-columns: 1fr 1fr !important; }
-        }
         @media (max-width: 768px) {
           .hero-grid { grid-template-columns: 1fr !important; gap: 2.5rem !important; }
           .hero-ring-diagram { display: none !important; }
           .content-row { grid-template-columns: 1fr !important; }
           .ring-single-decorator { display: none !important; }
           .testimonials-grid { grid-template-columns: 1fr !important; }
-        }
-        @media (max-width: 480px) {
           .steps-grid { grid-template-columns: 1fr !important; }
         }
       `}</style>
