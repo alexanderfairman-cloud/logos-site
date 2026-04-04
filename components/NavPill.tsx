@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import { usePathname } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -25,6 +26,8 @@ const menuLinks = [
 export default function NavPill() {
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const pathname = usePathname()
+  const hideCheckoutCTA = pathname === '/session'
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40)
@@ -138,9 +141,11 @@ export default function NavPill() {
 
           {/* Right side — CTA + hamburger */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-            <div className="nav-cta-desktop">
-              <CTAButton href="/logos-checkout" size="sm">Begin Your Logos</CTAButton>
-            </div>
+            {!hideCheckoutCTA && (
+              <div className="nav-cta-desktop">
+                <CTAButton href="/logos-checkout" size="sm">Begin Your Logos</CTAButton>
+              </div>
+            )}
 
             {/* Hamburger button — mobile only */}
             <button
