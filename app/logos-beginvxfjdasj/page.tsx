@@ -96,10 +96,10 @@ export default function BeginPortalPage() {
             <p className="body-sm" style={{ color: 'var(--text-ghost)' }}>
               Questions? Contact us at{' '}
               <a
-                href="mailto:support@experiencelogos.com"
+                href="mailto:support@welcometologos.com"
                 style={{ color: 'var(--blue-electric)' }}
               >
-                support@experiencelogos.com
+                support@welcometologos.com
               </a>
             </p>
           </div>

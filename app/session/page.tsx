@@ -38,7 +38,7 @@ export default function SessionPage() {
               </p>
             </div>
 
-            <CTAButton href="https://assessment.experiencelogos.com" size="lg" id="session-cta">
+            <CTAButton href="https://assessment.welcometologos.com" size="lg" id="session-cta">
               Begin My Assessment
             </CTAButton>
 

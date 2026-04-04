@@ -30,14 +30,14 @@ export default function IndividualConfirmationPage() {
               </p>
             </div>
 
-            <CTAButton href="https://assessment.experiencelogos.com" size="lg" id="individual-confirm-cta">
+            <CTAButton href="https://assessment.welcometologos.com" size="lg" id="individual-confirm-cta">
               Start My Logos Now
             </CTAButton>
 
             <p className="body-sm" style={{ color: 'var(--text-ghost)' }}>
               Questions? Contact us at{' '}
-              <a href="mailto:support@experiencelogos.com" style={{ color: 'var(--blue-electric)' }}>
-                support@experiencelogos.com
+              <a href="mailto:support@welcometologos.com" style={{ color: 'var(--blue-electric)' }}>
+                support@welcometologos.com
               </a>
             </p>
           </div>

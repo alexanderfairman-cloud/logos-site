@@ -16,6 +16,6 @@ export default function robots(): MetadataRoute.Robots {
         '/session/',
       ],
     },
-    sitemap: 'https://experiencelogos.com/sitemap.xml',
+    sitemap: 'https://www.welcometologos.com/sitemap.xml',
   }
 }

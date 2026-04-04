@@ -420,10 +420,10 @@ export default function LogosTrainingPage() {
               <p className="body-sm" style={{ color: 'var(--text-ghost)' }}>
                 Questions?{' '}
                 <a
-                  href="mailto:support@experiencelogos.com"
+                  href="mailto:support@welcometologos.com"
                   style={{ color: 'var(--blue-electric)' }}
                 >
-                  support@experiencelogos.com
+                  support@welcometologos.com
                 </a>
               </p>
             </motion.div>

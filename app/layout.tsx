@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
 
-const DOMAIN = 'https://experiencelogos.com'
+const DOMAIN = 'https://www.welcometologos.com'
 
 export const metadata: Metadata = {
   metadataBase: new URL(DOMAIN),
@@ -62,7 +62,7 @@ const jsonLd = {
   sameAs: [],
   contactPoint: {
     '@type': 'ContactPoint',
-    email: 'support@experiencelogos.com',
+    email: 'support@welcometologos.com',
     contactType: 'customer support',
   },
 }

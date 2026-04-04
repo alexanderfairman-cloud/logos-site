@@ -25,7 +25,7 @@ export default function WealthConfirmationPage() {
               </p>
             </div>
 
-            <CTAButton href="https://assessment.experiencelogos.com" size="lg" id="wealth-confirm-cta">
+            <CTAButton href="https://assessment.welcometologos.com" size="lg" id="wealth-confirm-cta">
               Begin My Assessment
             </CTAButton>
           </div>
