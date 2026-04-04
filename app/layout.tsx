@@ -62,7 +62,7 @@ const jsonLd = {
   sameAs: [],
   contactPoint: {
     '@type': 'ContactPoint',
-    email: 'support@welcometologos.com',
+    email: 'support@experiencelogos.com',
     contactType: 'customer support',
   },
 }

@@ -347,10 +347,10 @@ export default function IndividualCheckoutPage() {
                     >
                       We respect your privacy and information. Questions?{' '}
                       <a
-                        href="mailto:support@welcometologos.com"
+                        href="mailto:support@experiencelogos.com"
                         style={{ color: 'var(--blue-electric)' }}
                       >
-                        support@welcometologos.com
+                        support@experiencelogos.com
                       </a>
                     </p>
 

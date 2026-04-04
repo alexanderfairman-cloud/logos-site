@@ -151,10 +151,10 @@ export default function ReportCheckoutPage() {
                 >
                   Secure checkout. Questions?{' '}
                   <a
-                    href="mailto:support@welcometologos.com"
+                    href="mailto:support@experiencelogos.com"
                     style={{ color: 'var(--blue-electric)' }}
                   >
-                    support@welcometologos.com
+                    support@experiencelogos.com
                   </a>
                 </p>
               </div>
