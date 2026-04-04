@@ -30,7 +30,7 @@ export default function IndividualConfirmationPage() {
               </p>
             </div>
 
-            <CTAButton href="https://assessment.welcometologos.com" size="lg" id="individual-confirm-cta">
+            <CTAButton href="https://s.pointerpro.com/logosreport" size="lg" id="individual-confirm-cta">
               Start My Logos Now
             </CTAButton>
 
