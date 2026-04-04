@@ -3,9 +3,9 @@ import Footer from '@/components/Footer'
 import CTAButton from '@/components/CTAButton'
 
 export const metadata = {
-  title: 'Your Personal Codex Report — Logos',
+  title: 'Begin Your Logos Assessment — Logos',
   description:
-    'A 30-plus page portrait of your zone of genius, your growth edges, your core values, and the most direct path to the life you want.',
+    'Your Personal Codex Report is ready. Complete the Logos assessment to receive your full 30+ page portrait.',
 }
 
 const reveals = [
@@ -116,7 +116,7 @@ export default function ReportPage() {
                     </p>
                     {[
                       { n: '01', t: 'Complete the Logos assessment.', b: 'Allow approximately 45 minutes.' },
-                      { n: '02', t: 'Receive your full Personal Codex Report.', b: 'Delivered within 48 hours.' },
+                      { n: '02', t: 'Receive your full Personal Codex Report.', b: 'Available for instant download.' },
                     ].map((s) => (
                       <div key={s.n} style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
                         <p
@@ -143,8 +143,8 @@ export default function ReportPage() {
                 </div>
 
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-                  <CTAButton href="/logos-auto-report-checkoutz2hb1fcn" size="lg" id="report-cta">
-                    Begin Your Logos Assessment — $38
+                  <CTAButton href="https://su.vc/logosreport" size="lg" id="report-cta">
+                    Begin Your Logos Assessment
                   </CTAButton>
                   <p className="body-sm" style={{ color: 'var(--text-ghost)' }}>
                     Built on 40+ peer-reviewed studies. No two profiles are alike.

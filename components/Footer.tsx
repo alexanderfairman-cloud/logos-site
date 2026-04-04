@@ -9,7 +9,6 @@ const footerNav = [
       { label: 'For Individuals', href: '/for-leaders' },
       { label: 'For Coaches', href: '/for-coaches' },
       { label: 'For Teams', href: '/logos-teams' },
-      { label: 'The Report', href: '/report' },
     ],
   },
   {

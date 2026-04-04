@@ -19,7 +19,6 @@ const menuLinks = [
   { label: 'Coaches', href: '/for-coaches' },
   { label: 'Teams', href: '/logos-teams' },
   { label: 'Science', href: '/science-overlal' },
-  { label: 'Report', href: '/report' },
   { label: 'Privacy', href: '/logos-privacy' },
 ]
 
@@ -27,7 +26,7 @@ export default function NavPill() {
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const pathname = usePathname()
-  const hideCheckoutCTA = pathname === '/session' || pathname === '/logos-individuals-beginti1cj4e4'
+  const hideCheckoutCTA = pathname === '/session' || pathname === '/logos-individuals-beginti1cj4e4' || pathname === '/report'
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40)
