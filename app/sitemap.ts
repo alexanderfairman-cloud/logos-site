@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/logos-training',
     '/logos-checkout',
     '/logos-privacy',
+    '/logos-terms',
   ]
 
   const sciencePages = [
