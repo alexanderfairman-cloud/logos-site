@@ -5,7 +5,7 @@ import ForCoachesContent from '@/components/ForCoachesContent'
 export const metadata = {
   title: 'For Coaches — Logos',
   description:
-    'Stop spending sessions on symptoms. Logos gives you a complete map of your client\'s interior before the first deep conversation — core archetypes, ego patterns, and 70+ trait dimensions.',
+    "Logos gives you a complete map of your client's interior before the first deep conversation. Get started for $39, no subscription.",
 }
 
 export default function ForCoachesPage() {
