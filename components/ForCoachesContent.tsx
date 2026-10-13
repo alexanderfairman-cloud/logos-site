@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 import CTAButton from './CTAButton'
 
-const COACH_CHECKOUT_URL = 'https://buy.stripe.com/eVq00j48D9ofgf25ssfIs1c'
+const COACH_CHECKOUT_URL = 'https://buy.stripe.com/4gMeVd7kP2ZR0g45ssfIs1B'
 
 // The table of frameworks Logos integrates
 const frameworks = [
