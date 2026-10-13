@@ -5,7 +5,6 @@ import { motion } from 'framer-motion'
 import CTAButton from './CTAButton'
 
 const COACH_CHECKOUT_URL = 'https://buy.stripe.com/eVq00j48D9ofgf25ssfIs1c'
-const APPLY_FORM_URL = 'https://s.pointerpro.com/logoscoachform'
 
 // The table of frameworks Logos integrates
 const frameworks = [
@@ -884,19 +883,6 @@ export default function ForCoachesContent() {
                 One payment. Your own Logos and your coach portal. After payment you will create your account; use the same email you paid with.
               </p>
             </div>
-            <a
-              href={APPLY_FORM_URL}
-              className="body-sm"
-              style={{
-                color: 'var(--text-muted)',
-                textDecoration: 'underline',
-                textUnderlineOffset: '3px',
-                marginTop: '0.5rem',
-                transition: 'color 0.2s ease',
-              }}
-            >
-              Prefer to apply for a complimentary Logos first? Apply here.
-            </a>
           </motion.div>
         </div>
       </section>
