@@ -124,7 +124,7 @@ export default function ForIndividualsContent() {
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                 <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
                   <CTAButton href="/logos-checkout" size="lg" id="individuals-hero-cta">
-                    Begin Your Logos &mdash; $38
+                    Begin Your Logos &mdash; $39
                   </CTAButton>
                 </div>
                 <TrustLine />
@@ -322,7 +322,7 @@ export default function ForIndividualsContent() {
             style={{ display: 'flex', justifyContent: 'center', marginTop: '2.5rem' }}
           >
             <CTAButton href="/logos-checkout" size="lg" id="individuals-process-cta">
-              Begin Your Logos &mdash; $38
+              Begin Your Logos &mdash; $39
             </CTAButton>
           </motion.div>
         </div>
@@ -382,7 +382,7 @@ export default function ForIndividualsContent() {
               yourself.
             </h2>
             <CTAButton href="/logos-checkout" size="lg" id="individuals-bottom-cta">
-              Begin Your Logos — $38
+              Begin Your Logos — $39
             </CTAButton>
             <p className="body-sm">
               Your full Personal Codex Report, delivered within 48 hours of

@@ -223,7 +223,7 @@ export default function LeadershipEffectivenessPage() {
                 ))}
               </div>
               <div style={{ textAlign: 'center', paddingTop: '0.5rem' }}>
-                <CTAButton href="/logos-auto-report-checkoutz2hb1fcn" size="lg" id="leadership-effective-cta">Begin Your Logos — $38</CTAButton>
+                <CTAButton href="/logos-auto-report-checkoutz2hb1fcn" size="lg" id="leadership-effective-cta">Begin Your Logos — $39</CTAButton>
               </div>
             </motion.div>
           </div>

@@ -137,7 +137,7 @@ export default function EmployeeEngagementPage() {
                   </motion.div>
                 ))}
               </div>
-              <div style={{ textAlign: 'center', paddingTop: '0.5rem' }}><CTAButton href="/logos-auto-report-checkoutz2hb1fcn" size="lg" id="engagement-cta">Begin Your Logos — $38</CTAButton></div>
+              <div style={{ textAlign: 'center', paddingTop: '0.5rem' }}><CTAButton href="/logos-auto-report-checkoutz2hb1fcn" size="lg" id="engagement-cta">Begin Your Logos — $39</CTAButton></div>
             </motion.div>
           </div>
         </section>

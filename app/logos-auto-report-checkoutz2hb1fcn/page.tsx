@@ -133,12 +133,12 @@ export default function ReportCheckoutPage() {
                       color: 'var(--blue-deep)',
                     }}
                   >
-                    $38
+                    $39
                   </p>
                 </div>
 
                 <CTAButton
-                  href="https://buy.stripe.com/eVq00j48D9ofgf25ssfIs1c"
+                  href="https://buy.stripe.com/00wdR9dJd0RJe6Uf32fIs1y"
                   size="lg"
                   id="report-checkout-cta"
                 >
