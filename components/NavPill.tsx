@@ -138,8 +138,31 @@ export default function NavPill() {
             ))}
           </div>
 
-          {/* Right side — CTA + hamburger */}
+          {/* Right side — Login + CTA + hamburger */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+            <a
+              href="https://logosportal.com/sign-in"
+              style={{
+                fontFamily: "'Plus Jakarta Sans', sans-serif",
+                fontSize: '0.8125rem',
+                fontWeight: 500,
+                color: 'var(--text-muted)',
+                padding: '0.5rem 1rem',
+                borderRadius: '9999px',
+                transition: 'color 0.3s var(--ease-spring), background 0.3s var(--ease-spring)',
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.color = 'var(--blue-deep)'
+                e.currentTarget.style.background = 'rgba(27,58,107,0.05)'
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.color = 'var(--text-muted)'
+                e.currentTarget.style.background = 'transparent'
+              }}
+            >
+              Login
+            </a>
+
             {!hideCheckoutCTA && (
               <div className="nav-cta-desktop">
                 <CTAButton href="/logos-checkout" size="sm">Begin Your Logos</CTAButton>

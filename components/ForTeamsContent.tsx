@@ -157,7 +157,7 @@ export default function ForTeamsContent() {
                 clarity on what each person genuinely needs to do their best work.
               </p>
               <div>
-                <CTAButton href="mailto:support@experiencelogos.com" size="lg" id="teams-hero-cta">
+                <CTAButton href="mailto:support@welcometologos.com" size="lg" id="teams-hero-cta">
                   Talk to the Logos Team
                 </CTAButton>
               </div>
@@ -279,7 +279,7 @@ export default function ForTeamsContent() {
             <h2 className="display-md" style={{ textAlign: 'center' }}>
               Ready to build the kind of team that consistently outperforms?
             </h2>
-            <CTAButton href="mailto:support@experiencelogos.com" size="lg" id="teams-bottom-cta">
+            <CTAButton href="mailto:support@welcometologos.com" size="lg" id="teams-bottom-cta">
               Talk to the Logos Team
             </CTAButton>
           </motion.div>

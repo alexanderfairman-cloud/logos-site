@@ -153,10 +153,10 @@ export default function PrivacyPolicyPage() {
               <p className="body-md" style={{ color: 'var(--text-muted)' }}>
                 Contact:{' '}
                 <a
-                  href="mailto:support@experiencelogos.com"
+                  href="mailto:support@welcometologos.com"
                   style={{ color: 'var(--blue-electric)' }}
                 >
-                  support@experiencelogos.com
+                  support@welcometologos.com
                 </a>
               </p>
             </div>

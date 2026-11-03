@@ -461,7 +461,7 @@ export default function TermsPage() {
                 'Your individual results are confidential and will not be sold to third parties',
                 'Anonymized, aggregated data may be used for research and assessment refinement',
                 'If you share your results with a coach or manager through the Logos platform, those parties will have access to your report',
-                'You may request deletion of your data at any time by contacting us at support@experiencelogos.com',
+                'You may request deletion of your data at any time by contacting us at support@welcometologos.com',
               ]} />
               <p className="body-md" style={{ color: 'var(--text-body)', marginTop: '1rem' }}>
                 Logos complies with applicable data protection laws, including the California Consumer
@@ -480,7 +480,7 @@ export default function TermsPage() {
                 'Refunds are available within 24 hours of purchase if the assessment has not yet been started',
                 'Once the assessment has been completed and results delivered, no refund will be issued',
                 'In cases of documented technical failure preventing access to results, Logos will provide either a full refund or complimentary re-access at its discretion',
-                'Refund requests must be submitted to support@experiencelogos.com and include your order confirmation number',
+                'Refund requests must be submitted to support@welcometologos.com and include your order confirmation number',
               ]} />
               <p className="body-md" style={{ color: 'var(--text-body)', marginTop: '1rem' }}>
                 Logos reserves the right to modify this refund policy at any time. Changes will be reflected
@@ -510,8 +510,8 @@ export default function TermsPage() {
               <p className="body-md" style={{ color: 'var(--text-body)', marginTop: '1rem' }}>
                 You may opt out of the arbitration agreement within 30 days of first accepting these Terms
                 by sending written notice to{' '}
-                <a href="mailto:support@experiencelogos.com" style={{ color: 'var(--blue-electric)' }}>
-                  support@experiencelogos.com
+                <a href="mailto:support@welcometologos.com" style={{ color: 'var(--blue-electric)' }}>
+                  support@welcometologos.com
                 </a>.
               </p>
             </TosSection>
@@ -573,12 +573,12 @@ export default function TermsPage() {
               <p className="body-sm">
                 Reach us at{' '}
                 <a
-                  href="mailto:support@experiencelogos.com"
+                  href="mailto:support@welcometologos.com"
                   style={{ color: 'var(--blue-electric)', transition: 'opacity 0.2s' }}
                   onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.opacity = '0.7' }}
                   onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.opacity = '1' }}
                 >
-                  support@experiencelogos.com
+                  support@welcometologos.com
                 </a>
               </p>
             </div>

@@ -30,7 +30,7 @@ const footerNav = [
       { label: 'Begin Your Logos', href: '/logos-checkout' },
       { label: 'Privacy Policy', href: '/logos-privacy' },
       { label: 'Terms of Service', href: '/logos-terms' },
-      { label: 'support@experiencelogos.com', href: 'mailto:support@experiencelogos.com' },
+      { label: 'support@welcometologos.com', href: 'mailto:support@welcometologos.com' },
     ],
   },
 ]

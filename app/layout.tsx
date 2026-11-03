@@ -37,6 +37,9 @@ export const metadata: Metadata = {
     description: 'The most comprehensive personality assessment for leaders and coaches who want genuine self-knowledge.',
     images: ['/og-image.jpg'],
   },
+  verification: {
+    google: 'M1fwZjL_U5X1vYwcf13nQZYSb6DNQVtXfr8vemWQJDU',
+  },
   alternates: {
     canonical: DOMAIN,
   },
@@ -62,7 +65,7 @@ const jsonLd = {
   sameAs: [],
   contactPoint: {
     '@type': 'ContactPoint',
-    email: 'support@experiencelogos.com',
+    email: 'support@welcometologos.com',
     contactType: 'customer support',
   },
 }
