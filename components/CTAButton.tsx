@@ -1,7 +1,11 @@
 'use client'
 
+import { useSyncExternalStore } from 'react'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import { postCode, withPostCode } from '@/lib/post-code'
+
+const noChange = () => () => {}
 
 interface CTAButtonProps {
   children: React.ReactNode
@@ -39,6 +43,9 @@ export default function CTAButton({
   }
 
   const isPrimary = variant === 'primary'
+  // A Stripe payment link carries the post the visitor came through (read in the browser only, so the page renders the same on the server).
+  const code = useSyncExternalStore(noChange, postCode, () => null)
+  const to = withPostCode(href, code)
 
   return (
     <motion.div
@@ -49,7 +56,7 @@ export default function CTAButton({
     >
       <Link
         id={id}
-        href={href}
+        href={to}
         onClick={onClick}
         className="cta-button-inner"
         style={{
